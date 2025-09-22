@@ -53,9 +53,13 @@ export default function Navigation() {
             <div className="flex items-center">
               <button 
                 onClick={() => scrollToSection('hero')}
-                className="text-2xl font-black text-gray-900 hover:text-blue-600 transition-colors"
+                className="hover:opacity-80 transition-opacity duration-300"
               >
-                Spexop
+                <img 
+                  src="/logo.svg" 
+                  alt="Spexop Logo" 
+                  className="h-10 w-auto"
+                />
               </button>
             </div>
 

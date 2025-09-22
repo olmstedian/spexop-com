@@ -48,8 +48,17 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side content */}
           <div className="text-left">
+            {/* Logo */}
+            <div className="mb-8 flex justify-center lg:justify-start fade-in-up">
+              <img 
+                src="/logo.svg" 
+                alt="Spexop Logo" 
+                className="h-16 w-auto filter brightness-0 invert"
+              />
+            </div>
+            
             {/* Professional badge */}
-            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-500/10 backdrop-blur-sm border border-emerald-500/20 text-sm font-semibold mb-8 fade-in-up">
+            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-500/10 backdrop-blur-sm border border-emerald-500/20 text-sm font-semibold mb-8 fade-in-up-delay-1">
               <Code2 className="w-4 h-4 text-emerald-400" />
               <span className="text-emerald-100">Expert Web Development</span>
             </div>

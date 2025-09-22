@@ -8,8 +8,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="text-2xl font-bold mb-4">
-              <span className="text-primary-400">Spexop</span>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/logo.svg" 
+                alt="Spexop Logo" 
+                className="h-10 w-auto filter brightness-0 invert"
+              />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Smart, scalable software built fast. We help businesses move faster with modern apps and reliable backends.
