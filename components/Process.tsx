@@ -41,7 +41,7 @@ const processSteps = [
 
 export default function Process() {
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white section-padding">
+    <section id="process" className="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white section-padding">
       <div className="container-custom">
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-semibold mb-6">

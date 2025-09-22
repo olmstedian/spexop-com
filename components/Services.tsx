@@ -1,5 +1,6 @@
 import React from 'react'
 import { Globe, Smartphone, Server, Zap, ArrowRight, CheckCircle } from 'lucide-react'
+import ScrollAnimation from './ScrollAnimations'
 
 const services = [
   {
@@ -68,7 +69,7 @@ export default function Services() {
   return (
     <section id="services" className="bg-gradient-to-br from-gray-50 to-white section-padding">
       <div className="container-custom">
-        <div className="text-center mb-20">
+        <ScrollAnimation animation="fadeInUp" className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-emerald-100 to-blue-100 text-emerald-700 text-sm font-semibold mb-6">
             <Globe className="w-4 h-4" />
             Web Development Services
@@ -82,7 +83,7 @@ export default function Services() {
             From stunning websites to complex web applications, we deliver cutting-edge solutions 
             that help your business thrive in the digital landscape
           </p>
-        </div>
+        </ScrollAnimation>
         
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => {
@@ -132,7 +133,7 @@ export default function Services() {
                     </button>
                   </div>
                 </div>
-              </div>
+              </ScrollAnimation>
             )
           })}
         </div>
