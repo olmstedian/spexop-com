@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Mail, Github, Linkedin, Send, MessageCircle, Phone, MapPin, Clock, CheckCircle2, User, AtSign } from 'lucide-react'
 
 export default function Contact() {

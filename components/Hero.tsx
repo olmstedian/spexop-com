@@ -1,3 +1,4 @@
+import React from 'react'
 import { ArrowRight, Code, Zap, Globe } from 'lucide-react'
 
 export default function Hero() {

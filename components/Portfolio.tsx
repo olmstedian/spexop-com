@@ -1,3 +1,4 @@
+import React from 'react'
 import { ExternalLink, Github, Star, Users, Calendar, TrendingUp, Code2, Database, Smartphone } from 'lucide-react'
 
 const projects = [

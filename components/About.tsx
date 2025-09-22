@@ -1,3 +1,4 @@
+import React from 'react'
 import { MapPin, Users, Zap } from 'lucide-react'
 
 const highlights = [

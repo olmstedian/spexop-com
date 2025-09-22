@@ -1,3 +1,4 @@
+import React from 'react'
 import { Globe, Smartphone, Server, Zap, ArrowRight, CheckCircle } from 'lucide-react'
 
 const services = [
