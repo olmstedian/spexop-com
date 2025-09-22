@@ -34,19 +34,21 @@ export default function Contact() {
   }
 
   const projectTypes = [
+    'Business Website',
+    'E-commerce Store',
     'Web Application',
-    'Mobile App',
-    'Backend/API',
-    'MVP/Prototype',
-    'E-commerce',
+    'Website Redesign',
+    'CMS Website',
+    'Landing Page',
+    'Portfolio Site',
     'Other'
   ]
 
   const budgetRanges = [
-    'Under €5,000',
-    '€5,000 - €15,000',
-    '€15,000 - €50,000',
-    'Over €50,000',
+    'Under $5,000',
+    '$5,000 - $15,000',
+    '$15,000 - $50,000',
+    'Over $50,000',
     'Let\'s discuss'
   ]
 
