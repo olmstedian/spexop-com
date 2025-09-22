@@ -4,7 +4,7 @@ import { Users, Zap } from 'lucide-react'
 
 export default function About() {
   return (
-    <section id="about" className="bg-gradient-to-br from-gray-50 to-white section-padding">
+    <section id="about" className="bg-gradient-to-br from-emerald-50 via-white to-teal-50 section-padding">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">

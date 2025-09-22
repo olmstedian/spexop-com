@@ -53,7 +53,7 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="bg-gradient-to-br from-slate-50 via-white to-gray-50 section-padding">
+    <section id="contact" className="bg-gradient-to-br from-orange-50 via-white to-yellow-50 section-padding">
       <div className="container-custom">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">

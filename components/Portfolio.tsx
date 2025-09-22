@@ -63,7 +63,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="bg-gradient-to-br from-slate-50 via-white to-gray-50 section-padding">
+    <section id="portfolio" className="bg-gradient-to-br from-purple-50 via-white to-pink-50 section-padding">
       <div className="container-custom">
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-blue-100 text-primary-700 text-sm font-semibold mb-6">
