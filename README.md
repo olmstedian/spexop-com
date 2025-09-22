@@ -15,11 +15,13 @@ A modern, responsive company website for Spexop, an Estonian-based software deve
 ## 📋 Sections
 
 ### 🎯 Hero Section
+
 - Compelling headline and sub-headline
 - Call-to-action button with smooth scroll
 - Animated scroll indicator
 
 ### 🛠 Services Section
+
 - 4 service offerings with icons:
   - Custom Web Apps (React, Next.js, Tailwind)
   - Mobile Apps (iOS & Android)
@@ -27,17 +29,20 @@ A modern, responsive company website for Spexop, an Estonian-based software deve
   - MVP & Prototype Builds
 
 ### 🎨 Portfolio Section
+
 - 3 demo projects showcasing capabilities:
   - **Spexop Subscriptions**: SaaS subscription tracker
   - **TaskFlow**: Lightweight task management
   - **Business Dashboard**: Analytics and reporting dashboard
 
 ### ℹ️ About Section
+
 - Company background and philosophy
 - Estonian origin highlight
 - Key differentiators (fast delivery, clear communication, scalability)
 
 ### 📞 Contact Section
+
 - Interactive contact form
 - Direct contact information
 - Social media links (Email, LinkedIn, GitHub)
@@ -54,7 +59,8 @@ A modern, responsive company website for Spexop, an Estonian-based software deve
 ## 🛠 Development
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - pnpm (recommended)
 
 ### Installation
@@ -81,11 +87,12 @@ pnpm lint      # Run ESLint
 ```
 
 ### Development Server
+
 Open [http://localhost:3000](http://localhost:3000) to view the website.
 
 ## 📁 Project Structure
 
-```
+``` text
 spexop-com/
 ├── app/
 │   ├── globals.css          # Global styles
@@ -108,16 +115,19 @@ spexop-com/
 ## 🎨 Design System
 
 ### Colors
+
 - **Primary**: Blue palette (50-900)
 - **Background**: White and gray-50
 - **Text**: Gray-900, gray-700, gray-600
 
 ### Typography
+
 - **Font**: Inter (Google Fonts)
 - **Headings**: Bold, various sizes
 - **Body**: Regular weight
 
 ### Components
+
 - **Buttons**: Primary and secondary variants
 - **Cards**: Rounded with hover effects
 - **Forms**: Modern inputs with focus states
@@ -125,6 +135,7 @@ spexop-com/
 ## 🚀 Deployment
 
 ### Static Export
+
 The site is configured for static export:
 
 ```bash
@@ -132,6 +143,7 @@ pnpm build
 ```
 
 ### Hosting Options
+
 - **GitHub Pages**: Push to `gh-pages` branch
 - **Vercel**: Connect repository for automatic deployments
 - **Netlify**: Drag and drop the `out/` folder
@@ -140,12 +152,14 @@ pnpm build
 ## 📝 Content Management
 
 ### Updating Content
+
 - **Services**: Edit `components/Services.tsx`
 - **Portfolio**: Edit `components/Portfolio.tsx`
 - **About**: Edit `components/About.tsx`
 - **Contact**: Update email and social links in `components/Contact.tsx` and `components/Footer.tsx`
 
 ### Adding New Projects
+
 1. Add project data to the `projects` array in `components/Portfolio.tsx`
 2. Include: title, description, tech stack, and links
 3. Update project images in the `public/` folder
@@ -153,12 +167,15 @@ pnpm build
 ## 🔧 Customization
 
 ### Brand Colors
+
 Update colors in `tailwind.config.js` under the `extend.colors.primary` section.
 
 ### Fonts
+
 Change fonts in `app/globals.css` and `tailwind.config.js`.
 
 ### Layout
+
 Modify spacing and layout in the respective component files.
 
 ## 📈 Performance

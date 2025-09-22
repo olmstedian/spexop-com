@@ -15,6 +15,7 @@ This guide will help you set up a public GitHub repository for the Spexop.com we
 ### 1. Create GitHub Repository
 
 #### Option A: Using GitHub Web Interface
+
 1. Go to [GitHub.com](https://github.com)
 2. Click "New repository" (+ icon in top right)
 3. Fill in repository details:
@@ -25,6 +26,7 @@ This guide will help you set up a public GitHub repository for the Spexop.com we
 4. Click "Create repository"
 
 #### Option B: Using GitHub CLI (if installed)
+
 ```bash
 gh repo create spexop-com --public --description "Official website for Spexop - Estonian software development studio"
 ```
@@ -58,6 +60,7 @@ git push -u origin main
 ### 3. Repository Settings Configuration
 
 #### Branch Protection (Recommended)
+
 1. Go to repository → Settings → Branches
 2. Click "Add rule"
 3. Branch name pattern: `main`
@@ -67,6 +70,7 @@ git push -u origin main
    - ✅ Require branches to be up to date before merging
 
 #### Pages Setup
+
 1. Go to repository → Settings → Pages
 2. Source: "GitHub Actions"
 3. This will allow the deployment workflow to publish the site
@@ -155,7 +159,9 @@ git push origin main
 ### 5. Repository Features Configuration
 
 #### Topics/Tags (for discoverability)
+
 Add these topics in repository Settings → General:
+
 - `nextjs`
 - `typescript`
 - `tailwindcss`
@@ -166,11 +172,13 @@ Add these topics in repository Settings → General:
 - `company-website`
 
 #### About Section
+
 - Website: `https://username.github.io/spexop-com` (replace with actual URL)
 - Topics: (added above)
 - Include in the home page: ✅
 
 #### Issues Templates
+
 Create `.github/ISSUE_TEMPLATE/bug_report.md`:
 
 ```markdown
@@ -234,6 +242,7 @@ Add any other context or screenshots about the feature request here.
 ### 6. Security Setup
 
 #### Dependabot (Automated dependency updates)
+
 Create `.github/dependabot.yml`:
 
 ```yaml
@@ -250,6 +259,7 @@ updates:
 ```
 
 #### Security Policy
+
 Create `SECURITY.md`:
 
 ```markdown
@@ -281,6 +291,7 @@ We take security seriously and will respond within 48 hours.
 After setup, verify these items:
 
 ### ✅ Repository Checklist
+
 - [ ] Repository is public and accessible
 - [ ] README.md displays properly with formatting
 - [ ] All source files are committed and pushed
@@ -290,6 +301,7 @@ After setup, verify these items:
 - [ ] Branch protection rules are set
 
 ### ✅ Deployment Checklist
+
 - [ ] First deployment action completed successfully
 - [ ] Website is accessible at GitHub Pages URL
 - [ ] All pages load correctly
@@ -314,12 +326,14 @@ Replace `USERNAME` with your actual GitHub username.
 ## 🔧 Ongoing Maintenance
 
 ### Regular Tasks
+
 1. **Dependency Updates**: Review and merge Dependabot PRs
 2. **Content Updates**: Keep portfolio and services current
 3. **Performance**: Monitor Core Web Vitals and optimize
 4. **Security**: Review security alerts and update packages
 
 ### Monitoring
+
 - GitHub Actions for deployment status
 - GitHub Issues for bug reports and features
 - GitHub Insights for repository analytics
@@ -342,21 +356,25 @@ Replace `USERNAME` with your actual GitHub username.
 ### Common Issues
 
 **Deployment Fails:**
+
 - Check GitHub Actions logs
 - Verify pnpm-lock.yaml is committed
 - Ensure build command succeeds locally
 
 **Pages Not Loading:**
+
 - Verify Pages source is set to "GitHub Actions"
 - Check if deployment action completed successfully
 - Ensure index.html exists in build output
 
 **Assets Not Loading:**
+
 - Verify asset paths are relative
 - Check Next.js configuration for static export
 - Ensure images are in public/ directory
 
 ### Support Resources
+
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Next.js Deployment Guide](https://nextjs.org/docs/deployment)

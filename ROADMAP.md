@@ -9,6 +9,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 ## 🚀 Phase 1: Core Website (COMPLETED)
 
 ### ✅ Completed Tasks
+
 - [x] Project setup with Next.js, TypeScript, and Tailwind CSS
 - [x] Responsive design implementation
 - [x] Hero section with compelling messaging
@@ -26,6 +27,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 ## 🔄 Phase 2: Deployment & Launch (IN PROGRESS)
 
 ### 🎯 Current Sprint
+
 - [ ] **Repository Setup**
   - [ ] Create GitHub repository
   - [ ] Set up branch protection rules
@@ -50,6 +52,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 ## 📈 Phase 3: Enhancement & Optimization (NEXT)
 
 ### 🔧 Technical Improvements
+
 - [ ] **Performance Optimization**
   - [ ] Image optimization and lazy loading
   - [ ] Bundle size analysis and optimization
@@ -75,6 +78,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 ## 🎨 Phase 4: Content & Portfolio (ONGOING)
 
 ### 📚 Real Portfolio Projects
+
 - [ ] **Spexop Subscriptions**
   - [ ] Build functional demo
   - [ ] Deploy to subdomain
@@ -100,6 +104,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 ## 🌐 Phase 5: Marketing & Growth (FUTURE)
 
 ### 📣 Content Marketing
+
 - [ ] **Blog Section**
   - [ ] Set up blog with Next.js/MDX
   - [ ] Write technical articles
@@ -113,6 +118,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
   - [ ] Success metrics
 
 ### 🔗 Social Media & Networking
+
 - [ ] **LinkedIn Presence**
   - [ ] Company page setup
   - [ ] Regular content posting
@@ -132,6 +138,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 ## 🛠 Technical Debt & Maintenance
 
 ### 🔧 Ongoing Tasks
+
 - [ ] **Regular Updates**
   - [ ] Dependency updates
   - [ ] Security patches
@@ -151,6 +158,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 ## 📊 Success Metrics
 
 ### 🎯 Key Performance Indicators (KPIs)
+
 - **Website Traffic**: Target 1000+ monthly visitors by month 3
 - **Lead Generation**: 5+ quality inquiries per month
 - **Performance**: Lighthouse score >90 all categories
@@ -158,6 +166,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 - **Conversion**: 10%+ contact form conversion rate
 
 ### 📈 Analytics to Track
+
 - Page views and unique visitors
 - Bounce rate and session duration
 - Contact form submissions
@@ -170,6 +179,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 ## 🚨 Priority Issues & Known Limitations
 
 ### 🐛 Current Issues
+
 1. **Contact form needs backend integration**
    - Priority: High
    - Impact: Critical for lead generation
@@ -186,6 +196,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
    - Solution: Implement in Phase 3
 
 ### ⚠️ Future Considerations
+
 - Multi-language support (English/Estonian)
 - Dark mode implementation
 - Advanced filtering for portfolio
@@ -197,6 +208,7 @@ The core website is complete and ready for deployment. This roadmap outlines fut
 ## 💡 Ideas for Future Features
 
 ### 🎯 Phase 6+: Advanced Features
+
 - [ ] **Interactive Portfolio**
   - Live demos embedded in site
   - Technology filter/search
