@@ -1,4 +1,4 @@
-# Spexop.com - Company Website
+# Spexop.com - Developer Portfolio Website
 
 > Smart, Scalable Software — Built Fast.
 
