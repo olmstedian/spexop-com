@@ -261,7 +261,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-semibold text-white">Location</p>
-                      <p className="text-primary-100">Estonia, EU</p>
+                      <p className="text-primary-100">Remote & Global</p>
                     </div>
                   </div>
                   

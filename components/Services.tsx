@@ -4,42 +4,62 @@ import { Globe, Smartphone, Server, Zap, ArrowRight, CheckCircle } from 'lucide-
 const services = [
   {
     icon: Globe,
-    title: 'Custom Web Apps',
-    description: 'Scalable, responsive, and modern applications using React, Next.js, and Tailwind.',
-    features: ['React & Next.js', 'Responsive Design', 'SEO Optimized', 'Fast Performance'],
+    title: 'Website Development',
+    description: 'Modern, responsive websites that convert visitors into customers with exceptional user experience.',
+    features: ['Custom Design', 'Mobile-First', 'SEO Optimized', 'Fast Loading'],
     color: 'from-blue-500 to-blue-600',
     bgColor: 'bg-blue-50',
     iconColor: 'text-blue-600',
     emoji: '🌐'
   },
   {
+    icon: Server,
+    title: 'Website with CMS',
+    description: 'Content-managed websites with powerful authoring tools for easy content updates and management.',
+    features: ['Headless CMS', 'Easy Editing', 'Multi-user', 'Version Control'],
+    color: 'from-indigo-500 to-indigo-600',
+    bgColor: 'bg-indigo-50',
+    iconColor: 'text-indigo-600',
+    emoji: '📝'
+  },
+  {
     icon: Smartphone,
-    title: 'Mobile Apps',
-    description: 'iOS and Android apps for startups and businesses — built with speed and reliability.',
-    features: ['iOS & Android', 'Native Performance', 'App Store Ready', 'Cloud Integration'],
+    title: 'Mobile Applications',
+    description: 'Native and cross-platform mobile apps that deliver exceptional user experiences on any device.',
+    features: ['iOS & Android', 'React Native', 'App Store Ready', 'Push Notifications'],
     color: 'from-green-500 to-green-600',
     bgColor: 'bg-green-50',
     iconColor: 'text-green-600',
     emoji: '📱'
   },
   {
-    icon: Server,
-    title: 'Backend & API Development',
-    description: 'Robust NestJS + PostgreSQL backends, optimized for performance and security.',
-    features: ['NestJS & Node.js', 'PostgreSQL', 'API Security', 'Cloud Deploy'],
+    icon: Zap,
+    title: 'Custom Web Apps',
+    description: 'Scalable web applications with advanced functionality, perfect for SaaS products and enterprise solutions.',
+    features: ['React & Next.js', 'Real-time Data', 'User Auth', 'API Integration'],
     color: 'from-purple-500 to-purple-600',
     bgColor: 'bg-purple-50',
     iconColor: 'text-purple-600',
     emoji: '⚡'
   },
   {
-    icon: Zap,
-    title: 'MVP & Prototype Builds',
-    description: 'Turn your idea into a working demo in weeks, not months.',
-    features: ['Rapid Development', 'Core Features', 'User Testing', 'Market Ready'],
+    icon: Globe,
+    title: 'Backend & API Development',
+    description: 'Robust server-side solutions and APIs that power your applications with security and performance.',
+    features: ['Node.js & NestJS', 'Database Design', 'API Security', 'Cloud Deploy'],
     color: 'from-orange-500 to-orange-600',
     bgColor: 'bg-orange-50',
     iconColor: 'text-orange-600',
+    emoji: '🔧'
+  },
+  {
+    icon: CheckCircle,
+    title: 'MVP & Prototype Development',
+    description: 'Transform your ideas into working prototypes quickly to validate concepts and secure funding.',
+    features: ['Rapid Development', 'Core Features', 'User Testing', 'Investor Ready'],
+    color: 'from-pink-500 to-pink-600',
+    bgColor: 'bg-pink-50',
+    iconColor: 'text-pink-600',
     emoji: '🚀'
   }
 ]
@@ -60,7 +80,7 @@ export default function Services() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => {
             const Icon = service.icon
             return (

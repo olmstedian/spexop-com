@@ -4,11 +4,11 @@ import { MapPin, Users, Zap } from 'lucide-react'
 const highlights = [
   {
     icon: MapPin,
-    text: 'Estonian-based studio'
+    text: 'Global reach'
   },
   {
     icon: Users,
-    text: 'Startups & SMEs focus'
+    text: 'Expert team'
   },
   {
     icon: Zap,
@@ -30,17 +30,17 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <div>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                <strong>Spexop is an independent Estonian-based software development studio.</strong> We focus on practical, modern, and reliable solutions for startups and SMEs.
-              </p>
-              
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Our approach is simple: <strong>clear communication, fast delivery, and long-term scalability.</strong> We believe in building useful tools that solve real problems.
-              </p>
-              
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Founded by an engineer with a passion for building useful tools that solve real problems, we combine technical expertise with business understanding to deliver solutions that actually work.
-              </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <strong>Spexop is a modern software development studio</strong> focused on delivering exceptional digital solutions. We specialize in creating practical, scalable applications for businesses of all sizes.
+            </p>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Our approach combines <strong>cutting-edge technology with strategic thinking</strong> to build software that drives real business results. We believe in transparent communication and collaborative partnerships.
+            </p>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              From startups to established companies, we help organizations transform their ideas into powerful digital experiences that engage users and accelerate growth.
+            </p>
               
               {/* Highlights */}
               <div className="grid grid-cols-3 gap-4">
@@ -60,19 +60,19 @@ export default function About() {
             
             {/* Visual Element */}
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 rounded-3xl shadow-2xl flex items-center justify-center">
+              <div className="aspect-square bg-gradient-to-br from-blue-500 via-purple-600 to-indigo-700 rounded-3xl shadow-2xl flex items-center justify-center">
                 <div className="text-center text-white">
-                  <div className="text-8xl mb-4">🇪🇪</div>
-                  <p className="text-xl font-semibold">Made in Estonia</p>
-                  <p className="text-primary-200">Quality & Innovation</p>
+                  <div className="text-8xl mb-4">💡</div>
+                  <p className="text-xl font-semibold">Innovation Driven</p>
+                  <p className="text-blue-200">Quality & Excellence</p>
                 </div>
               </div>
               
               {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-yellow-400 rounded-2xl shadow-lg flex items-center justify-center text-2xl rotate-12">
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl shadow-lg flex items-center justify-center text-2xl rotate-12">
                 ⚡
               </div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-green-400 rounded-2xl shadow-lg flex items-center justify-center text-xl -rotate-12">
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-green-400 to-teal-400 rounded-2xl shadow-lg flex items-center justify-center text-xl -rotate-12">
                 🚀
               </div>
             </div>

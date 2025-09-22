@@ -67,7 +67,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Spexop. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm">
-            Made with ❤️ in Estonia
+            Built with passion ❤️
           </p>
         </div>
       </div>
