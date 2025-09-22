@@ -1,20 +1,6 @@
 import React from 'react'
 import { MapPin, Users, Zap } from 'lucide-react'
 
-const highlights = [
-  {
-    icon: MapPin,
-    text: 'Global reach'
-  },
-  {
-    icon: Users,
-    text: 'Expert team'
-  },
-  {
-    icon: Zap,
-    text: 'Fast delivery'
-  }
-]
 
 export default function About() {
   return (
@@ -30,7 +16,7 @@ export default function About() {
               Why Choose <span className="bg-gradient-to-r from-gray-900 to-blue-600 bg-clip-text text-transparent">Spexop</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're not just developers – we're digital strategists who understand business goals and user needs.
+              We&apos;re not just developers – we&apos;re digital strategists who understand business goals and user needs.
             </p>
           </div>
           
@@ -73,9 +59,7 @@ export default function About() {
                   <p className="text-gray-600 text-sm">We work as an extension of your team</p>
                 </div>
               </div>
-            </div>
               
-            
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
@@ -95,7 +79,7 @@ export default function About() {
                 <div className="text-gray-600 text-sm font-medium">Support Available</div>
               </div>
             </div>
-            </div>
+          </div>
             
             {/* Visual Element - Team/Technology showcase */}
             <div className="relative">
@@ -151,7 +135,7 @@ export default function About() {
           <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Digital Presence?</h3>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Let's discuss how we can help you achieve your business goals through exceptional web development.
+              Let&apos;s discuss how we can help you achieve your business goals through exceptional web development.
             </p>
             <a 
               href="#contact" 

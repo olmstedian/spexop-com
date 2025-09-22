@@ -49,7 +49,7 @@ export default function Contact() {
     '$5,000 - $15,000',
     '$15,000 - $50,000',
     'Over $50,000',
-    'Let\'s discuss'
+    'Let&apos;s discuss'
   ]
 
   return (
@@ -64,7 +64,7 @@ export default function Contact() {
               Have a <span className="gradient-text">Project</span> in Mind?
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Let's turn your vision into reality. We're here to help you build something amazing.
+              Let&apos;s turn your vision into reality. We&apos;re here to help you build something amazing.
             </p>
           </div>
           
@@ -226,7 +226,7 @@ export default function Contact() {
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">Message Sent Successfully!</h3>
                     <p className="text-gray-600 text-lg mb-4">
-                      Thank you for reaching out. We'll get back to you within 24 hours.
+                      Thank you for reaching out. We&apos;ll get back to you within 24 hours.
                     </p>
                     <p className="text-gray-500 text-sm">
                       You should receive a confirmation email shortly.
@@ -243,7 +243,7 @@ export default function Contact() {
                   Let's Connect
                 </h3>
                 <p className="text-primary-100 text-lg leading-relaxed mb-8">
-                  Ready to bring your ideas to life? We're excited to hear about your project and discuss how we can help.
+                  Ready to bring your ideas to life? We&apos;re excited to hear about your project and discuss how we can help.
                 </p>
                 
                 <div className="space-y-6">
