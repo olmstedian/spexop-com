@@ -69,14 +69,18 @@ export default function Services() {
     <section id="services" className="bg-gradient-to-br from-gray-50 to-white section-padding">
       <div className="container-custom">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-semibold mb-6">
-            ⚡ Our Services
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-emerald-100 to-blue-100 text-emerald-700 text-sm font-semibold mb-6">
+            <Globe className="w-4 h-4" />
+            Web Development Services
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-6 gradient-text">
-            What We Build
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-6">
+            <span className="bg-gradient-to-r from-emerald-600 via-blue-600 to-violet-600 bg-clip-text text-transparent">
+              Digital Solutions
+            </span> That Drive Results
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive software development services designed to accelerate your business growth
+          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            From stunning websites to complex web applications, we deliver cutting-edge solutions 
+            that help your business thrive in the digital landscape
           </p>
         </div>
         

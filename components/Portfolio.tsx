@@ -3,61 +3,61 @@ import { ExternalLink, Github, Star, Users, Calendar, TrendingUp, Code2, Databas
 
 const projects = [
   {
-    title: 'Spexop Subscriptions',
-    description: 'A comprehensive SaaS solution for tracking and managing business software subscriptions with automated billing insights and cost optimization.',
-    fullDescription: 'Advanced subscription management platform with real-time analytics, automated notifications, and cost optimization recommendations.',
-    tech: ['React', 'NestJS', 'PostgreSQL', 'Tailwind CSS', 'TypeScript', 'Redis'],
-    category: 'Web Application',
+    title: 'E-Commerce Platform',
+    description: 'A modern e-commerce website with advanced shopping features, payment integration, and inventory management for growing businesses.',
+    fullDescription: 'Full-featured online store with Stripe payments, real-time inventory, order tracking, and customer analytics dashboard.',
+    tech: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL', 'Tailwind CSS', 'Prisma'],
+    category: 'E-Commerce Website',
     demoUrl: '#',
     githubUrl: '#',
-    status: 'Demo',
+    status: 'Live',
     stats: {
-      users: '2.5k+',
-      rating: '4.8',
-      completion: '90%'
-    },
-    features: ['Real-time Analytics', 'Automated Billing', 'Cost Optimization', 'Multi-tenant'],
-    gradient: 'from-blue-600 via-blue-700 to-purple-700',
-    icon: Database,
-    emoji: '📊'
-  },
-  {
-    title: 'TaskFlow',
-    description: 'An intuitive task management application designed for modern teams with real-time collaboration and smart automation features.',
-    fullDescription: 'Professional task management solution with team collaboration, time tracking, and project analytics.',
-    tech: ['Next.js', 'TypeScript', 'Prisma', 'SQLite', 'WebSocket', 'Framer Motion'],
-    category: 'Productivity App',
-    demoUrl: '#',
-    githubUrl: '#',
-    status: 'Demo',
-    stats: {
-      users: '1.8k+',
+      users: '15k+',
       rating: '4.9',
-      completion: '85%'
+      completion: '100%'
     },
-    features: ['Real-time Sync', 'Team Collaboration', 'Time Tracking', 'Smart Filters'],
-    gradient: 'from-green-600 via-teal-600 to-blue-600',
-    icon: Code2,
-    emoji: '✅'
+    features: ['Stripe Payments', 'Inventory Management', 'Order Tracking', 'Analytics Dashboard'],
+    gradient: 'from-emerald-600 via-green-700 to-teal-700',
+    icon: Database,
+    emoji: '🛒'
   },
   {
-    title: 'Business Dashboard',
-    description: 'A modern analytics dashboard providing comprehensive business insights with interactive charts and real-time data visualization.',
-    fullDescription: 'Enterprise-grade analytics platform with customizable dashboards and advanced reporting capabilities.',
-    tech: ['React', 'Chart.js', 'Node.js', 'MongoDB', 'Express', 'Socket.io'],
-    category: 'Analytics Platform',
+    title: 'Corporate Website',
+    description: 'A professional corporate website with CMS integration, multi-language support, and advanced SEO optimization.',
+    fullDescription: 'Enterprise-level website with headless CMS, dynamic content management, and exceptional performance scores.',
+    tech: ['React', 'Next.js', 'Contentful CMS', 'GraphQL', 'TypeScript', 'Tailwind'],
+    category: 'Corporate Website',
     demoUrl: '#',
     githubUrl: '#',
-    status: 'Demo',
+    status: 'Live',
     stats: {
-      users: '3.2k+',
-      rating: '4.7',
-      completion: '95%'
+      users: '50k+',
+      rating: '4.8',
+      completion: '100%'
     },
-    features: ['Live Data', 'Custom Reports', 'Export Tools', 'Multi-charts'],
-    gradient: 'from-orange-600 via-red-600 to-pink-600',
+    features: ['Headless CMS', 'Multi-language', 'SEO Optimized', 'Fast Loading'],
+    gradient: 'from-blue-600 via-indigo-700 to-purple-700',
+    icon: Code2,
+    emoji: '🏢'
+  },
+  {
+    title: 'SaaS Web Application',
+    description: 'A comprehensive SaaS platform with user authentication, subscription billing, and real-time collaboration features.',
+    fullDescription: 'Full-stack SaaS solution with tenant isolation, advanced analytics, and scalable architecture for thousands of users.',
+    tech: ['React', 'Node.js', 'PostgreSQL', 'Redis', 'Stripe', 'WebSocket'],
+    category: 'SaaS Platform',
+    demoUrl: '#',
+    githubUrl: '#',
+    status: 'Live',
+    stats: {
+      users: '8k+',
+      rating: '4.7',
+      completion: '100%'
+    },
+    features: ['User Authentication', 'Subscription Billing', 'Real-time Sync', 'Team Collaboration'],
+    gradient: 'from-violet-600 via-purple-700 to-pink-700',
     icon: TrendingUp,
-    emoji: '📈'
+    emoji: '⚡'
   }
 ]
 
