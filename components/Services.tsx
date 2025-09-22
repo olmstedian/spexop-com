@@ -24,44 +24,44 @@ const services = [
     emoji: '📝'
   },
   {
-    icon: Smartphone,
-    title: 'Mobile Applications',
-    description: 'Native and cross-platform mobile apps that deliver exceptional user experiences on any device.',
-    features: ['iOS & Android', 'React Native', 'App Store Ready', 'Push Notifications'],
-    color: 'from-green-500 to-green-600',
-    bgColor: 'bg-green-50',
-    iconColor: 'text-green-600',
-    emoji: '📱'
+    icon: Globe,
+    title: 'Custom Web Apps',
+    description: 'Scalable, responsive, and modern applications using React, Next.js, and Tailwind.',
+    features: ['React & Next.js', 'Tailwind CSS', 'TypeScript', 'Performance'],
+    color: 'from-emerald-500 to-emerald-600',
+    bgColor: 'bg-emerald-50',
+    iconColor: 'text-emerald-600',
+    emoji: '⚛️'
   },
   {
-    icon: Zap,
-    title: 'Custom Web Apps',
-    description: 'Scalable web applications with advanced functionality, perfect for SaaS products and enterprise solutions.',
-    features: ['React & Next.js', 'Real-time Data', 'User Auth', 'API Integration'],
+    icon: Smartphone,
+    title: 'Mobile Apps',
+    description: 'iOS and Android apps for startups and businesses — built with speed and reliability.',
+    features: ['Cross-Platform', 'Native Performance', 'Push Notifications', 'Offline Support'],
     color: 'from-purple-500 to-purple-600',
     bgColor: 'bg-purple-50',
     iconColor: 'text-purple-600',
-    emoji: '⚡'
+    emoji: '📱'
   },
   {
-    icon: Globe,
+    icon: Server,
     title: 'Backend & API Development',
-    description: 'Robust server-side solutions and APIs that power your applications with security and performance.',
-    features: ['Node.js & NestJS', 'Database Design', 'API Security', 'Cloud Deploy'],
+    description: 'Robust NestJS + PostgreSQL backends, optimized for performance and security.',
+    features: ['NestJS Framework', 'PostgreSQL', 'REST & GraphQL', 'Cloud Ready'],
     color: 'from-orange-500 to-orange-600',
     bgColor: 'bg-orange-50',
     iconColor: 'text-orange-600',
-    emoji: '🔧'
+    emoji: '🚀'
   },
   {
-    icon: CheckCircle,
-    title: 'MVP & Prototype Development',
-    description: 'Transform your ideas into working prototypes quickly to validate concepts and secure funding.',
-    features: ['Rapid Development', 'Core Features', 'User Testing', 'Investor Ready'],
+    icon: Zap,
+    title: 'MVP & Prototype Builds',
+    description: 'Turn your idea into a working demo in weeks, not months.',
+    features: ['Rapid Development', 'User Testing', 'Iterative Design', 'Go-to-Market'],
     color: 'from-pink-500 to-pink-600',
     bgColor: 'bg-pink-50',
     iconColor: 'text-pink-600',
-    emoji: '🚀'
+    emoji: '⚡'
   }
 ]
 
@@ -89,48 +89,51 @@ export default function Services() {
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <div 
+              <ScrollAnimation 
                 key={index}
-                className="group relative bg-white p-8 lg:p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-gray-200 card-hover"
+                animation="scaleIn" 
+                delay={index * 100}
               >
-                {/* Background gradient on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 rounded-3xl transition-opacity duration-500`}></div>
-                
-                <div className="relative z-10">
-                  <div className="flex items-start gap-6 mb-6">
-                    <div className={`w-16 h-16 ${service.bgColor} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                      <Icon className={`w-8 h-8 ${service.iconColor}`} />
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-3">
-                        <h3 className="text-2xl font-bold text-gray-900 group-hover:text-gray-800">
-                          {service.title}
-                        </h3>
-                        <span className="text-2xl">{service.emoji}</span>
-                      </div>
-                      <p className="text-gray-600 leading-relaxed text-lg">
-                        {service.description}
-                      </p>
-                    </div>
+                <div className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden">
+                  {/* Background gradient overlay */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                  
+                  {/* Service icon */}
+                  <div className={`w-16 h-16 ${service.bgColor} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon className={`w-8 h-8 ${service.iconColor}`} />
                   </div>
                   
-                  {/* Features list */}
-                  <div className="grid grid-cols-2 gap-3 mb-6">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <CheckCircle className={`w-4 h-4 ${service.iconColor}`} />
-                        <span className="text-gray-700 text-sm font-medium">{feature}</span>
-                      </div>
-                    ))}
+                  {/* Service emoji */}
+                  <div className="absolute top-6 right-6 text-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                    {service.emoji}
                   </div>
                   
-                  {/* Call to action */}
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <span className="text-gray-500 text-sm">Starting from consultation</span>
-                    <button className="flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold text-sm group-hover:gap-3 transition-all duration-300">
-                      Learn More
-                      <ArrowRight className="w-4 h-4" />
-                    </button>
+                  {/* Service content */}
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-800">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed mb-6">
+                      {service.description}
+                    </p>
+                    
+                    {/* Features list */}
+                    <div className="space-y-2 mb-6">
+                      {service.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-center gap-2">
+                          <CheckCircle className="w-4 h-4 text-emerald-500" />
+                          <span className="text-sm text-gray-600">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    {/* Learn more button */}
+                    <div className="pt-4 border-t border-gray-100">
+                      <button className="flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                        Learn More
+                        <ArrowRight className="w-4 h-4" />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </ScrollAnimation>
@@ -139,29 +142,29 @@ export default function Services() {
         </div>
         
         {/* Call to action section */}
-        <div className="text-center bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-12 text-white shadow-2xl">
-          <h3 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
-          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss your ideas and create something amazing together
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
-              href="#contact" 
-              className="bg-white text-primary-600 hover:bg-gray-50 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2"
-            >
-              <span className="text-xl">💬</span>
-              Get Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </a>
-            <a 
-              href="#portfolio" 
-              className="bg-primary-500 hover:bg-primary-400 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2"
-            >
-              <span className="text-xl">👀</span>
-              View Our Work
-            </a>
+        <ScrollAnimation animation="fadeInUp" delay={200}>
+          <div className="text-center bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-12 text-white shadow-2xl">
+            <h3 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
+            <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+              Let's discuss your vision and create a roadmap to bring it to life.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="#contact" 
+                className="bg-white text-primary-600 hover:bg-gray-50 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2"
+              >
+                <Zap className="w-5 h-5" />
+                Get Started Today
+              </a>
+              <a 
+                href="#portfolio" 
+                className="border-2 border-white/20 text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2"
+              >
+                View Our Work
+              </a>
+            </div>
           </div>
-        </div>
+        </ScrollAnimation>
       </div>
     </section>
   )
