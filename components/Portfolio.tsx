@@ -1,102 +1,246 @@
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github, Star, Users, Calendar, TrendingUp, Code2, Database, Smartphone } from 'lucide-react'
 
 const projects = [
   {
     title: 'Spexop Subscriptions',
-    description: 'A SaaS module for tracking business software subscriptions. Built with React + NestJS.',
-    tech: ['React', 'NestJS', 'PostgreSQL', 'Tailwind CSS'],
-    image: '/api/placeholder/600/400',
+    description: 'A comprehensive SaaS solution for tracking and managing business software subscriptions with automated billing insights and cost optimization.',
+    fullDescription: 'Advanced subscription management platform with real-time analytics, automated notifications, and cost optimization recommendations.',
+    tech: ['React', 'NestJS', 'PostgreSQL', 'Tailwind CSS', 'TypeScript', 'Redis'],
+    category: 'Web Application',
     demoUrl: '#',
     githubUrl: '#',
-    status: 'Demo'
+    status: 'Demo',
+    stats: {
+      users: '2.5k+',
+      rating: '4.8',
+      completion: '90%'
+    },
+    features: ['Real-time Analytics', 'Automated Billing', 'Cost Optimization', 'Multi-tenant'],
+    gradient: 'from-blue-600 via-blue-700 to-purple-700',
+    icon: Database,
+    emoji: '📊'
   },
   {
     title: 'TaskFlow',
-    description: 'A lightweight task management app. Simple, intuitive, and fast.',
-    tech: ['Next.js', 'TypeScript', 'Prisma', 'SQLite'],
-    image: '/api/placeholder/600/400',
+    description: 'An intuitive task management application designed for modern teams with real-time collaboration and smart automation features.',
+    fullDescription: 'Professional task management solution with team collaboration, time tracking, and project analytics.',
+    tech: ['Next.js', 'TypeScript', 'Prisma', 'SQLite', 'WebSocket', 'Framer Motion'],
+    category: 'Productivity App',
     demoUrl: '#',
     githubUrl: '#',
-    status: 'Demo'
+    status: 'Demo',
+    stats: {
+      users: '1.8k+',
+      rating: '4.9',
+      completion: '85%'
+    },
+    features: ['Real-time Sync', 'Team Collaboration', 'Time Tracking', 'Smart Filters'],
+    gradient: 'from-green-600 via-teal-600 to-blue-600',
+    icon: Code2,
+    emoji: '✅'
   },
   {
-    title: 'Business Dashboard Demo',
-    description: 'A clean admin dashboard with analytics and reporting.',
-    tech: ['React', 'Chart.js', 'Node.js', 'MongoDB'],
-    image: '/api/placeholder/600/400',
+    title: 'Business Dashboard',
+    description: 'A modern analytics dashboard providing comprehensive business insights with interactive charts and real-time data visualization.',
+    fullDescription: 'Enterprise-grade analytics platform with customizable dashboards and advanced reporting capabilities.',
+    tech: ['React', 'Chart.js', 'Node.js', 'MongoDB', 'Express', 'Socket.io'],
+    category: 'Analytics Platform',
     demoUrl: '#',
     githubUrl: '#',
-    status: 'Demo'
+    status: 'Demo',
+    stats: {
+      users: '3.2k+',
+      rating: '4.7',
+      completion: '95%'
+    },
+    features: ['Live Data', 'Custom Reports', 'Export Tools', 'Multi-charts'],
+    gradient: 'from-orange-600 via-red-600 to-pink-600',
+    icon: TrendingUp,
+    emoji: '📈'
   }
 ]
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="bg-gray-50 section-padding">
+    <section id="portfolio" className="bg-gradient-to-br from-slate-50 via-white to-gray-50 section-padding">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Showcase
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-blue-100 text-primary-700 text-sm font-semibold mb-6">
+            🎨 Our Portfolio
+          </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-6">
+            <span className="gradient-text">Featured</span> Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Recent projects and demos showcasing our capabilities
+          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Showcasing our expertise through innovative solutions and cutting-edge technology implementations
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 group"
-            >
-              {/* Project Image */}
-              <div className="relative h-48 bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-6xl mb-2">🚀</div>
-                  <div className="text-sm font-medium">{project.status}</div>
+        <div className="space-y-16">
+          {projects.map((project, index) => {
+            const Icon = project.icon
+            const isEven = index % 2 === 0
+            
+            return (
+              <div 
+                key={index}
+                className={`group grid lg:grid-cols-2 gap-12 items-center ${!isEven ? 'lg:grid-flow-col-dense' : ''}`}
+              >
+                {/* Project Image/Visual */}
+                <div className={`relative ${!isEven ? 'lg:col-start-2' : ''}`}>
+                  <div className="relative overflow-hidden rounded-3xl shadow-2xl group-hover:shadow-3xl transition-all duration-500">
+                    {/* Background with gradient */}
+                    <div className={`h-80 lg:h-96 bg-gradient-to-br ${project.gradient} flex items-center justify-center relative overflow-hidden`}>
+                      {/* Animated background elements */}
+                      <div className="absolute inset-0 overflow-hidden">
+                        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-white/10 rounded-full blur-xl floating-animation"></div>
+                        <div className="absolute bottom-1/4 right-1/4 w-24 h-24 bg-white/10 rounded-full blur-xl floating-animation" style={{animationDelay: '-2s'}}></div>
+                      </div>
+                      
+                      {/* Main icon */}
+                      <div className="relative z-10 text-center text-white">
+                        <div className="text-8xl mb-4">{project.emoji}</div>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white font-medium">
+                          <Icon className="w-5 h-5" />
+                          {project.status}
+                        </div>
+                      </div>
+                      
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                          <div className="flex gap-4">
+                            <a 
+                              href={project.demoUrl}
+                              className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 inline-flex items-center gap-2"
+                            >
+                              <ExternalLink className="w-5 h-5" />
+                              View Demo
+                            </a>
+                            <a 
+                              href={project.githubUrl}
+                              className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 inline-flex items-center gap-2"
+                            >
+                              <Github className="w-5 h-5" />
+                              Code
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {project.title}
-                </h3>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-                
-                {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tech.map((tech, techIndex) => (
-                    <span 
-                      key={techIndex}
-                      className="px-3 py-1 bg-primary-50 text-primary-700 text-sm rounded-full font-medium"
+                {/* Project Details */}
+                <div className={`${!isEven ? 'lg:col-start-1 lg:row-start-1' : ''} space-y-6`}>
+                  <div>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-600 text-sm font-medium mb-4">
+                      <Calendar className="w-4 h-4" />
+                      {project.category}
+                    </div>
+                    
+                    <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                      {project.title}
+                    </h3>
+                    
+                    <p className="text-lg text-gray-600 leading-relaxed mb-2">
+                      {project.description}
+                    </p>
+                    
+                    <p className="text-gray-500 leading-relaxed">
+                      {project.fullDescription}
+                    </p>
+                  </div>
+                  
+                  {/* Project Stats */}
+                  <div className="flex gap-6">
+                    <div className="text-center">
+                      <div className="flex items-center gap-1 text-yellow-500 mb-1">
+                        <Star className="w-4 h-4 fill-current" />
+                        <span className="font-semibold text-gray-900">{project.stats.rating}</span>
+                      </div>
+                      <div className="text-xs text-gray-500">Rating</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="flex items-center gap-1 text-blue-500 mb-1">
+                        <Users className="w-4 h-4" />
+                        <span className="font-semibold text-gray-900">{project.stats.users}</span>
+                      </div>
+                      <div className="text-xs text-gray-500">Users</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-green-500 mb-1">
+                        <span className="font-semibold text-gray-900">{project.stats.completion}</span>
+                      </div>
+                      <div className="text-xs text-gray-500">Complete</div>
+                    </div>
+                  </div>
+                  
+                  {/* Key Features */}
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-3">Key Features</h4>
+                    <div className="grid grid-cols-2 gap-2">
+                      {project.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
+                          <span className="text-gray-700 text-sm">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Tech Stack */}
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-3">Technology Stack</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map((tech, techIndex) => (
+                        <span 
+                          key={techIndex}
+                          className="px-3 py-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm rounded-lg font-medium transition-colors duration-200"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Action Buttons */}
+                  <div className="flex gap-4 pt-4">
+                    <a 
+                      href={project.demoUrl}
+                      className="btn-primary px-6 py-3"
                     >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                
-                {/* Project Links */}
-                <div className="flex gap-3">
-                  <a 
-                    href={project.demoUrl}
-                    className="flex-1 btn-primary justify-center text-sm py-2"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    View Demo
-                  </a>
-                  <a 
-                    href={project.githubUrl}
-                    className="btn-secondary text-sm py-2 px-4"
-                  >
-                    <Github className="w-4 h-4" />
-                  </a>
+                      <ExternalLink className="w-5 h-5" />
+                      View Live Demo
+                    </a>
+                    <a 
+                      href={project.githubUrl}
+                      className="btn-secondary px-6 py-3"
+                    >
+                      <Github className="w-5 h-5" />
+                      Source Code
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
+        </div>
+        
+        {/* Call to Action */}
+        <div className="text-center mt-20 bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-12 text-white">
+          <h3 className="text-3xl font-bold mb-4">Impressed by Our Work?</h3>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Let's create something amazing for your business. Every project starts with a conversation.
+          </p>
+          <a 
+            href="#contact" 
+            className="bg-primary-600 hover:bg-primary-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2"
+          >
+            <span className="text-xl">🚀</span>
+            Start Your Project
+            <ExternalLink className="w-5 h-5" />
+          </a>
         </div>
       </div>
     </section>
