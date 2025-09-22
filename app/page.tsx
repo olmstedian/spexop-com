@@ -8,10 +8,13 @@ import FAQ from '@/components/FAQ'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import ScrollEffects, { ScrollProgress } from '@/components/ScrollEffects'
 
 export default function Home() {
   return (
     <>
+      <ScrollEffects />
+      <ScrollProgress />
       <Navigation />
       <main className="min-h-screen">
         <Hero />

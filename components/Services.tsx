@@ -68,7 +68,7 @@ export default function Services() {
   return (
     <section id="services" className="bg-gradient-to-br from-blue-50 via-white to-indigo-50 section-padding">
       <div className="container-custom">
-        <div className="text-center mb-20">
+        <div className="scroll-animate text-center mb-20">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-emerald-100 to-blue-100 text-emerald-700 text-sm font-semibold mb-6">
             <Globe className="w-4 h-4" />
             Web Development Services
@@ -90,7 +90,7 @@ export default function Services() {
             return (
               <div 
                 key={index}
-                className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden"
+                className={`scroll-animate scale-in delay-${(index + 1) * 100} group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden`}
               >
                   {/* Background gradient overlay */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
@@ -138,7 +138,7 @@ export default function Services() {
         </div>
         
         {/* Call to action section */}
-        <div className="text-center bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-12 text-white shadow-2xl">
+        <div className="scroll-animate delay-200 text-center bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-12 text-white shadow-2xl">
             <h3 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
             <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
               Let's discuss your vision and create a roadmap to bring it to life.
