@@ -5,36 +5,36 @@ import { ChevronDown, HelpCircle } from 'lucide-react'
 
 const faqs = [
   {
-    question: "How long does it take to build a website?",
-    answer: "Project timelines vary based on complexity. A simple business website typically takes 2-4 weeks, while complex web applications can take 8-16 weeks. We'll provide a detailed timeline during our initial consultation."
+    question: "What industries and types of projects do you work with?",
+    answer: "We work across all industries including e-commerce, healthcare, finance, education, government, defense, and more. Our projects range from simple business websites to complex enterprise applications, data processing systems, surveillance platforms, and specialized intelligence solutions. We adapt our approach to meet each client's unique requirements."
   },
   {
-    question: "What's included in your web development service?",
-    answer: "Our service includes custom design, responsive development, content management system, SEO optimization, performance optimization, security setup, testing across devices, and 30 days of post-launch support."
+    question: "What technologies and frameworks do you use?",
+    answer: "We use modern, enterprise-grade technologies including React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL, MongoDB, Redis, and various cloud platforms. Our tech stack is chosen based on project requirements, scalability needs, and industry best practices. We stay current with the latest technologies while ensuring proven reliability."
   },
   {
-    question: "Do you provide ongoing maintenance and support?",
-    answer: "Yes, we offer various maintenance packages including regular updates, security monitoring, performance optimization, content updates, and technical support. We can discuss the best option for your needs."
+    question: "How do you ensure security and data protection?",
+    answer: "Security is fundamental to all our projects. We implement industry-standard security measures including authentication, authorization, data encryption, secure APIs, and compliance with relevant regulations (GDPR, HIPAA, SOC 2, etc.). For sensitive projects, we follow enhanced security protocols and confidentiality agreements."
   },
   {
-    question: "Can you help with existing website redesign?",
-    answer: "Absolutely! We specialize in redesigning existing websites to improve performance, user experience, and modern design standards. We can work with your current content and enhance your online presence."
+    question: "What is your experience with high-performance applications?",
+    answer: "We have extensive experience building scalable applications that handle high data volumes and concurrent users. Our solutions include real-time data processing, advanced caching strategies, database optimization, and comprehensive monitoring. We've built systems processing 100K+ operations daily with sub-5-second response times."
   },
   {
-    question: "What technologies do you use?",
-    answer: "We use modern technologies including React, Next.js, TypeScript, Node.js, PostgreSQL, and cloud hosting platforms. We choose the best tech stack based on your specific requirements and goals."
+    question: "Do you provide ongoing support and maintenance?",
+    answer: "Yes, we offer comprehensive support packages tailored to your needs. This includes regular updates, security monitoring, performance optimization, bug fixes, feature enhancements, and technical support. We provide both basic maintenance and enterprise-level support with SLA guarantees."
   },
   {
-    question: "How much does a website cost?",
-    answer: "Costs vary based on project scope and requirements. Simple websites start from $5,000, while complex web applications can range from $15,000+. We provide detailed quotes after understanding your specific needs."
+    question: "Can you work with existing systems and integrate new solutions?",
+    answer: "Absolutely. We specialize in integrating with existing infrastructure including databases, APIs, third-party services, and legacy systems. Our solutions are designed for seamless integration while maintaining data integrity and system stability. We can work with various platforms and technologies."
   },
   {
-    question: "Do you provide hosting and domain services?",
-    answer: "We can help you choose the best hosting solution and set it up, though we typically recommend clients own their hosting accounts. We'll guide you through the process and ensure optimal performance."
+    question: "What is your development process and timeline?",
+    answer: "Our development process includes requirements analysis, architecture design, iterative development, testing, and deployment. Timelines vary based on project complexity: simple websites (2-4 weeks), complex web applications (8-16 weeks), enterprise systems (3-6 months). We provide detailed project plans and regular updates throughout development."
   },
   {
-    question: "Will my website be mobile-friendly?",
-    answer: "Yes, all our websites are built with a mobile-first approach and are fully responsive across all devices. We test thoroughly on various screen sizes and browsers to ensure perfect functionality."
+    question: "Do you offer specialized solutions for sensitive industries?",
+    answer: "Yes, we have extensive experience with sensitive projects including government, defense, healthcare, and financial applications. We follow strict confidentiality protocols, implement enhanced security measures, and comply with industry-specific regulations. Our team is experienced in handling classified and confidential information."
   }
 ]
 
@@ -62,7 +62,7 @@ export default function FAQ() {
               Got <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Questions?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Here are answers to the most common questions about our web development process and services.
+              Here are answers to the most common questions about our development services, from simple websites to complex enterprise applications across all industries.
             </p>
           </div>
 

@@ -1,0 +1,289 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Modern brand gradient - Deep purple to electric blue -->
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Accent gradient - Electric cyan to neon green -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Text gradient - Rich charcoal to modern slate -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#312e81;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Accent text gradient for "Sp" with shimmer effect -->
+    <linearGradient id="accentTextGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1">
+        <animate attributeName="stop-color" values="#00d9ff;#06b6d4;#0891b2;#00d9ff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1">
+        <animate attributeName="stop-color" values="#0891b2;#00d9ff;#06b6d4;#0891b2" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1">
+        <animate attributeName="stop-color" values="#06b6d4;#0891b2;#00d9ff;#06b6d4" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <!-- Enhanced brand text gradient for "oP" with depth -->
+    <linearGradient id="brandTextGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1">
+        <animate attributeName="stop-color" values="#7c3aed;#8b5cf6;#a855f7;#7c3aed" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="30%" style="stop-color:#8b5cf6;stop-opacity:1">
+        <animate attributeName="stop-color" values="#8b5cf6;#a855f7;#c084fc;#8b5cf6" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="70%" style="stop-color:#a855f7;stop-opacity:1">
+        <animate attributeName="stop-color" values="#a855f7;#c084fc;#ddd6fe;#a855f7" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1">
+        <animate attributeName="stop-color" values="#c084fc;#ddd6fe;#a855f7;#c084fc" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <!-- Animated text gradient for "eX" -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1">
+        <animate attributeName="stop-color" values="#1e1b4b;#312e81;#475569;#1e1b4b" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#312e81;stop-opacity:1">
+        <animate attributeName="stop-color" values="#312e81;#475569;#64748b;#312e81" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <!-- Animated gradient overlay for text glow -->
+    <radialGradient id="textGlowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Dynamic shimmer gradient with movement -->
+    <linearGradient id="shimmerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+      <stop offset="40%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.4);stop-opacity:1">
+        <animate attributeName="stop-opacity" values="0.2;0.6;0.2" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="60%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+      <animateTransform 
+        attributeName="gradientTransform" 
+        type="translate" 
+        values="-200 0;400 0;-200 0" 
+        dur="3s" 
+        repeatCount="indefinite"/>
+    </linearGradient>
+    
+    <!-- Icon glow with modern purple -->
+    <filter id="iconGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#7c3aed" flood-opacity="0.25"/>
+    </filter>
+    
+    <!-- Pulse glow animation with electric blue -->
+    <filter id="pulseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#3b82f6" flood-opacity="0.4">
+        <animate attributeName="stdDeviation" values="2;6;2" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="flood-opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+      </feDropShadow>
+    </filter>
+  </defs>
+  
+  <!-- Improved geometric icon with perfect vertical alignment -->
+  <g transform="translate(12, 30)">
+    <!-- Main circular frame with breathing animation -->
+    <circle cx="18" cy="0" r="16" 
+            stroke="url(#brandGradient)" 
+            stroke-width="2.5" 
+            fill="none" 
+            opacity="0.8">
+      <animate attributeName="r" values="16;17;16" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Inner dynamic elements with rotation -->
+    <g transform="translate(18, 0)" filter="url(#pulseGlow)">
+      <!-- Central rotating triangular form -->
+      <path d="M-8 -4 L4 -8 L8 4 L-4 8 Z" 
+            fill="url(#brandGradient)" 
+            opacity="0.9">
+        <animateTransform 
+          attributeName="transform" 
+          type="rotate" 
+          values="0;360" 
+          dur="8s" 
+          repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Counter-rotating complementary shape -->
+      <path d="M-4 -8 L8 -4 L4 8 L-8 4 Z" 
+            fill="url(#accentGradient)" 
+            opacity="0.7">
+        <animateTransform 
+          attributeName="transform" 
+          type="rotate" 
+          values="360;0" 
+          dur="12s" 
+          repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Central core with subtle pulse -->
+      <circle cx="0" cy="0" r="3" fill="white" opacity="0.95">
+        <animate attributeName="r" values="3;3.5;3" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="1.5" fill="url(#brandGradient)">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Orbital accent elements with floating animation -->
+    <circle cx="2" cy="0" r="2" fill="url(#accentGradient)" opacity="0.6">
+      <animate attributeName="cy" values="0;-2;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="34" cy="0" r="2" fill="url(#accentGradient)" opacity="0.6">
+      <animate attributeName="cy" values="0;2;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="18" cy="-14" r="1.5" fill="url(#brandGradient)" opacity="0.5">
+      <animate attributeName="cx" values="18;20;18" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="18" cy="14" r="1.5" fill="url(#brandGradient)" opacity="0.5">
+      <animate attributeName="cx" values="18;16;18" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Perfectly aligned typography with vertical center matching icon -->
+  <g transform="translate(55, 30)">
+    <!-- Individual animated letters -->
+    <!-- "S" -->
+    <text x="0" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'SF Pro Display', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          letter-spacing="-0.8px"
+          dominant-baseline="central"
+          fill="url(#accentTextGradient)">
+      S
+      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- "p" -->
+    <text x="16" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'SF Pro Display', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          letter-spacing="-0.8px"
+          dominant-baseline="central"
+          fill="url(#accentTextGradient)">
+      p
+      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3.2s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- "e" -->
+    <text x="32" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'SF Pro Display', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          letter-spacing="-0.8px"
+          dominant-baseline="central"
+          fill="url(#textGradient)">
+      e
+      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3.4s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- "X" -->
+    <text x="48" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'SF Pro Display', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          letter-spacing="-0.8px"
+          dominant-baseline="central"
+          fill="url(#textGradient)">
+      X
+      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3.6s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- "o" -->
+    <text x="68" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'SF Pro Display', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          letter-spacing="-0.8px"
+          dominant-baseline="central"
+          fill="url(#brandTextGradient)">
+      o
+      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3.8s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- "P" -->
+    <text x="84" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'SF Pro Display', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          letter-spacing="-0.8px"
+          dominant-baseline="central"
+          fill="url(#brandTextGradient)">
+      P
+      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="4s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- Shimmer overlay effect for all letters -->
+    <text x="0" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'SF Pro Display', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          letter-spacing="-0.8px"
+          textLength="120"
+          lengthAdjust="spacing"
+          dominant-baseline="central"
+          fill="url(#shimmerGradient)"
+          opacity="0.8">
+      <tspan>Sp</tspan><tspan>eX</tspan><tspan>oP</tspan>
+    </text>
+    
+    <!-- Subtle glow background -->
+    <text x="0" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'SF Pro Display', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          letter-spacing="-0.8px"
+          textLength="120"
+          lengthAdjust="spacing"
+          dominant-baseline="central"
+          fill="url(#textGlowGradient)"
+          opacity="0.5">
+      <tspan>Sp</tspan><tspan>eX</tspan><tspan>oP</tspan>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  
+  <!-- Animated connecting element -->
+  <line x1="48" y1="30" x2="52" y2="30" stroke="url(#accentGradient)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-width" values="2;3;2" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Modern floating accents with orbiting animation -->
+  <g>
+    <circle cx="185" cy="15" r="2.5" fill="url(#accentGradient)" opacity="0.4">
+      <animate attributeName="cy" values="15;12;15" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="192" cy="22" r="1.8" fill="url(#brandGradient)" opacity="0.3">
+      <animate attributeName="cx" values="192;195;192" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="188" cy="30" r="1.2" fill="url(#accentGradient)" opacity="0.5">
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

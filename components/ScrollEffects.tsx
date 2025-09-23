@@ -1,87 +1,187 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useCallback, useRef } from 'react'
 
 export default function ScrollEffects() {
+  const observerRef = useRef<IntersectionObserver | null>(null)
+  const animatedElementsRef = useRef<Set<Element>>(new Set())
+
+  const handleIntersection = useCallback((entries: IntersectionObserverEntry[]) => {
+    entries.forEach((entry) => {
+      const element = entry.target
+      
+      if (entry.isIntersecting && !animatedElementsRef.current.has(element)) {
+        // Add a small delay before animation for smoother effect
+        requestAnimationFrame(() => {
+          element.classList.add('animate-in')
+          animatedElementsRef.current.add(element)
+        })
+      }
+    })
+  }, [])
+
   useEffect(() => {
-    // Add scroll-based animations using CSS classes
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+    // Enhanced observer options for better performance and smoother animations
+    const observerOptions: IntersectionObserverInit = {
+      threshold: [0, 0.1, 0.2, 0.3],
+      rootMargin: '0px 0px -10% 0px'
     }
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in')
-        }
-      })
-    }, observerOptions)
+    observerRef.current = new IntersectionObserver(handleIntersection, observerOptions)
 
     // Observe all elements with scroll-animate class
     const elements = document.querySelectorAll('.scroll-animate')
-    elements.forEach(el => observer.observe(el))
+    elements.forEach(el => {
+      if (observerRef.current) {
+        observerRef.current.observe(el)
+      }
+    })
 
-    return () => observer.disconnect()
-  }, [])
+    // Add scroll-triggered parallax effects
+    let ticking = false
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          updateParallaxElements()
+          updateScrollProgress()
+          ticking = false
+        })
+        ticking = true
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect()
+      }
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [handleIntersection])
 
   return null
 }
 
-// Scroll progress indicator
+// Enhanced scroll progress with smooth animations
 export function ScrollProgress() {
+  const progressRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
-    const updateScrollProgress = () => {
-      const scrollTop = window.scrollY
-      const docHeight = document.body.scrollHeight - window.innerHeight
-      const scrollPercent = (scrollTop / docHeight) * 100
+    const updateProgress = () => {
+      if (!progressRef.current) return
       
-      const progressBar = document.getElementById('scroll-progress')
-      if (progressBar) {
-        progressBar.style.width = `${scrollPercent}%`
-      }
+      const scrollTop = window.scrollY
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight
+      const scrollPercent = Math.min((scrollTop / docHeight) * 100, 100)
+      
+      progressRef.current.style.transform = `scaleX(${scrollPercent / 100})`
     }
 
-    window.addEventListener('scroll', updateScrollProgress)
-    return () => window.removeEventListener('scroll', updateScrollProgress)
+    const handleScroll = () => {
+      requestAnimationFrame(updateProgress)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    updateProgress() // Initial call
+
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
-    <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
+    <div className="fixed top-0 left-0 w-full h-1 bg-gray-100 z-50 overflow-hidden">
       <div 
-        id="scroll-progress"
-        className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-150 ease-out"
-        style={{ width: '0%' }}
+        ref={progressRef}
+        className="h-full w-full bg-gradient-to-r from-emerald-500 via-blue-500 to-purple-500 origin-left transform scale-x-0 transition-transform duration-75 ease-out"
       />
     </div>
   )
 }
 
-// Parallax scroll effect
-export function ParallaxElement({ children, speed = 0.5, className = '' }: { 
-  children: React.ReactNode, 
-  speed?: number, 
-  className?: string 
+// Enhanced parallax with performance optimizations
+export function ParallaxElement({ 
+  children, 
+  speed = 0.5, 
+  className = '',
+  direction = 'vertical'
+}: { 
+  children: React.ReactNode
+  speed?: number
+  className?: string
+  direction?: 'vertical' | 'horizontal'
 }) {
+  const elementRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
+    const element = elementRef.current
+    if (!element) return
+
+    let ticking = false
     const handleScroll = () => {
-      const scrolled = window.pageYOffset
-      const parallaxElements = document.querySelectorAll('.parallax')
-      
-      parallaxElements.forEach(element => {
-        const elementSpeed = parseFloat(element.getAttribute('data-speed') || '0.5')
-        const yPos = -(scrolled * elementSpeed)
-        element.style.transform = `translateY(${yPos}px)`
-      })
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrolled = window.pageYOffset
+          const rate = scrolled * -speed
+
+          if (direction === 'vertical') {
+            element.style.transform = `translateY(${rate}px)`
+          } else {
+            element.style.transform = `translateX(${rate}px)`
+          }
+          
+          ticking = false
+        })
+        ticking = true
+      }
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [speed, direction])
 
   return (
-    <div className={`parallax ${className}`} data-speed={speed}>
+    <div ref={elementRef} className={`parallax-element ${className}`}>
       {children}
     </div>
   )
+}
+
+// Utility functions for scroll effects
+function updateParallaxElements() {
+  const scrolled = window.pageYOffset
+  const parallaxElements = document.querySelectorAll('.parallax-bg')
+  
+  parallaxElements.forEach(element => {
+    const rect = element.getBoundingClientRect()
+    const speed = parseFloat(element.getAttribute('data-speed') || '0.5')
+    
+    // Only animate elements that are in or near the viewport
+    if (rect.bottom >= -100 && rect.top <= window.innerHeight + 100) {
+      const yPos = scrolled * speed
+      ;(element as HTMLElement).style.transform = `translateY(${yPos}px)`
+    }
+  })
+}
+
+function updateScrollProgress() {
+  const elements = document.querySelectorAll('.scroll-progress-trigger')
+  elements.forEach(element => {
+    const rect = element.getBoundingClientRect()
+    const windowHeight = window.innerHeight
+    const elementTop = rect.top
+    const elementHeight = rect.height
+    
+    // Calculate visibility percentage
+    const visibleTop = Math.max(0, windowHeight - elementTop)
+    const visibleBottom = Math.min(elementHeight, visibleTop)
+    const visibilityRatio = Math.max(0, Math.min(1, visibleBottom / elementHeight))
+    
+    // Apply dynamic styling based on scroll progress
+    if (visibilityRatio > 0) {
+      element.classList.add('in-view')
+      element.setAttribute('data-scroll-progress', visibilityRatio.toString())
+    } else {
+      element.classList.remove('in-view')
+    }
+  })
 }

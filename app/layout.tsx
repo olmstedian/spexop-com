@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   description: 'We design and develop modern apps, web platforms, and backends that help businesses move faster.',
   keywords: 'software development, web apps, mobile apps, backend development, Estonia, React, Next.js, NestJS',
   authors: [{ name: 'Spexop' }],
+  icons: {
+    icon: [
+      { url: '/icon.svg', sizes: 'any', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' }
+    ],
+    apple: [
+      { url: '/icon.svg', sizes: '180x180', type: 'image/svg+xml' }
+    ]
+  },
   openGraph: {
     title: 'Spexop - Smart, Scalable Software Built Fast',
     description: 'We design and develop modern apps, web platforms, and backends that help businesses move faster.',

@@ -13,17 +13,40 @@ export default function Contact() {
     message: ''
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    // console.log('Form submitted:', formData)
-    setIsSubmitted(true)
-    // Reset form after delay
-    setTimeout(() => {
-      setFormData({ name: '', email: '', company: '', projectType: '', budget: '', message: '' })
-      setIsSubmitted(false)
-    }, 3000)
+    setIsLoading(true)
+    setError(null)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message')
+      }
+
+      setIsSubmitted(true)
+      // Reset form after delay
+      setTimeout(() => {
+        setFormData({ name: '', email: '', company: '', projectType: '', budget: '', message: '' })
+        setIsSubmitted(false)
+      }, 5000)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to send message')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -208,13 +231,40 @@ export default function Contact() {
                           <p className="text-blue-700 text-sm mt-1">Your information is secure and will never be shared with third parties.</p>
                         </div>
                       </div>
+
+                      {/* Error message */}
+                      {error && (
+                        <div className="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+                          <div className="text-red-600 mt-1">
+                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-2-9a1 1 0 000 2v4a1 1 0 102 0V7a1 1 0 00-1-1z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <div className="flex-1">
+                            <p className="text-red-800 text-sm font-medium">Error sending message</p>
+                            <p className="text-red-700 text-sm mt-1">{error}</p>
+                          </div>
+                        </div>
+                      )}
                       
                       <button
                         type="submit"
-                        className="w-full btn-primary text-lg py-5 justify-center group"
+                        disabled={isLoading}
+                        className={`w-full btn-primary text-lg py-5 justify-center group relative ${
+                          isLoading ? 'opacity-75 cursor-not-allowed' : ''
+                        }`}
                       >
-                        <Send className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
-                        Send Message
+                        {isLoading ? (
+                          <>
+                            <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                            Sending Message...
+                          </>
+                        ) : (
+                          <>
+                            <Send className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
+                            Send Message
+                          </>
+                        )}
                         <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
                       </button>
                     </form>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Mail, Github, Linkedin } from 'lucide-react'
 
 export default function Footer() {
@@ -9,10 +10,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-              <img 
-                src="/logo.svg" 
+              <Image 
+                src="/logo-alt.svg" 
                 alt="Spexop Logo" 
-                className="h-10 w-auto filter brightness-0 invert"
+                width={120}
+                height={40}
+                className="h-10 filter brightness-0 invert"
+                style={{ width: "auto", height: "auto" }}
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">

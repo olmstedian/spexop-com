@@ -1,35 +1,49 @@
 import React from 'react'
-import { Star, Quote } from 'lucide-react'
+import { Star, Quote, CheckCircle } from 'lucide-react'
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO, TechStartup Inc",
-    company: "TechStartup Inc",
-    content: "Spexop delivered an exceptional website that exceeded our expectations. The attention to detail and technical expertise was outstanding.",
+    name: "Security Director",
+    role: "Director of Operations",
+    company: "Argus Eyes",
+    project: "Argus Eyes Dashboard V3",
+    content: "The Argus Eyes Dashboard V3 SIGINT platform delivered exceeded all expectations. The real-time processing capabilities and advanced analytics have significantly enhanced our operational effectiveness. The system handles 100K+ signals daily with exceptional reliability.",
     rating: 5,
-    avatar: "👩‍💼"
+    avatar: "SD",
+    highlight: "100K+ signals processed daily",
+    bgColor: "from-slate-600 to-gray-800"
   },
   {
-    name: "Michael Chen",
-    role: "Founder, Digital Agency",
-    company: "Digital Agency",
-    content: "Working with Spexop was a game-changer. They built us a scalable web application that handles thousands of users effortlessly.",
+    name: "Technical Lead",
+    role: "Senior Systems Engineer",
+    company: "Argus Eyes",
+    project: "AEDSS",
+    content: "The AEDSS surveillance system integration was flawless. The triangulation simulation and real-time monitoring capabilities provide unprecedented operational insights. The team's expertise in handling sensitive data while maintaining security standards was outstanding.",
     rating: 5,
-    avatar: "👨‍💻"
+    avatar: "TL",
+    highlight: "Zero security incidents",
+    bgColor: "from-orange-600 to-red-700"
   },
   {
-    name: "Emily Rodriguez",
-    role: "Marketing Director",
-    company: "E-commerce Plus",
-    content: "The team's expertise in modern web technologies and user experience design helped us increase conversions by 150%.",
+    name: "Operations Manager",
+    role: "Head of Technical Operations",
+    company: "Argus Eyes",
+    project: "AE-TCP-Listener",
+    content: "The AE-TCP-Listener data processing infrastructure has revolutionized our workflow. The multi-database synchronization and comprehensive observability features ensure we never miss critical information. The system's performance under high load is exceptional.",
     rating: 5,
-    avatar: "👩‍🎨"
+    avatar: "OM",
+    highlight: "99.9% uptime achieved",
+    bgColor: "from-teal-600 to-cyan-700"
   }
 ]
 
 const companies = [
-  "TechFlow", "WebCorp", "DigitalFirst", "StartupHub", "InnovateLab", "CodeCraft"
+  { name: "Argus Eyes", logo: "AE" },
+  { name: "NGC 315 Defense Technologies", logo: "NGC" },
+  { name: "MDS 16 Defense & Space", logo: "MDS" },
+  { name: "Intelligence Services", logo: "IS" },
+  { name: "Defense Solutions", logo: "DS" },
+  { name: "Security Systems", logo: "SS" }
 ]
 
 export default function Testimonials() {
@@ -41,10 +55,20 @@ export default function Testimonials() {
           <p className="text-gray-500 text-sm font-semibold mb-8 tracking-wide uppercase">
             Trusted by forward-thinking companies
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+          <div className="flex flex-wrap justify-center items-center gap-12">
             {companies.map((company, index) => (
-              <div key={index} className="text-xl font-bold text-gray-400 hover:text-gray-600 transition-colors">
-                {company}
+              <div 
+                key={index} 
+                className="group relative"
+              >
+                <div className="w-20 h-20 bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                  <span className="text-2xl font-bold bg-gradient-to-br from-slate-600 to-slate-800 bg-clip-text text-transparent">
+                    {company.logo}
+                  </span>
+                </div>
+                <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-slate-500 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  {company.name}
+                </span>
               </div>
             ))}
           </div>
@@ -60,7 +84,7 @@ export default function Testimonials() {
               What Our <span className="bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">Clients</span> Say
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Don't just take our word for it. Here's what business leaders say about working with us.
+              Trusted by security and intelligence professionals worldwide. Here's what industry leaders say about our specialized solutions.
             </p>
           </div>
 
@@ -89,14 +113,29 @@ export default function Testimonials() {
                   "{testimonial.content}"
                 </p>
 
+                {/* Highlight metric */}
+                {testimonial.highlight && (
+                  <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200">
+                    <CheckCircle className="w-4 h-4 text-emerald-600" />
+                    <span className="text-sm font-semibold text-emerald-700">
+                      {testimonial.highlight}
+                    </span>
+                  </div>
+                )}
+
                 {/* Author */}
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-2xl">
+                <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
+                  <div className={`w-12 h-12 bg-gradient-to-r ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold`}>
                     {testimonial.avatar}
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-gray-500 text-sm">{testimonial.role}</div>
+                    <div className="text-gray-500 text-sm">{testimonial.role}, {testimonial.company}</div>
+                    {testimonial.project && (
+                      <div className="text-blue-600 text-xs font-medium mt-1">
+                        Project: {testimonial.project}
+                      </div>
+                    )}
                   </div>
                 </div>
 

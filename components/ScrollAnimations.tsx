@@ -58,7 +58,6 @@ export default function ScrollAnimation({
   )
 }
 
-// Hook for scroll-based animations
 export function useScrollAnimation() {
   const [isVisible, setIsVisible] = useState(false)
   const ref = useRef<HTMLDivElement>(null)

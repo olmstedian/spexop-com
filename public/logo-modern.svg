@@ -1,0 +1,135 @@
+<svg width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Modern monochromatic gradient -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#475569;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Electric accent gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Secondary gradient for "eX" -->
+    <linearGradient id="secondaryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle glow for premium feel -->
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#3b82f6" flood-opacity="0.15"/>
+    </filter>
+    
+    <!-- Clean shadow -->
+    <filter id="cleanShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  
+  <!-- Modern minimal icon -->
+  <g transform="translate(10, 25)" filter="url(#cleanShadow)">
+    <!-- Clean hexagonal frame -->
+    <path d="M7 0 L17 0 L22 8.66 L17 17.32 L7 17.32 L2 8.66 Z" 
+          stroke="url(#primaryGradient)" 
+          stroke-width="1.5" 
+          fill="rgba(59, 130, 246, 0.03)" 
+          opacity="0.9">
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="6s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Central dynamic element -->
+    <g transform="translate(12, 8.66)" filter="url(#subtleGlow)">
+      <!-- Modern diamond shape -->
+      <rect x="-4" y="-4" width="8" height="8" 
+            fill="url(#accentGradient)" 
+            rx="1" 
+            transform="rotate(45)" 
+            opacity="0.9">
+        <animateTransform 
+          attributeName="transform" 
+          type="rotate" 
+          values="45;135;45" 
+          dur="8s" 
+          repeatCount="indefinite"/>
+      </rect>
+      
+      <!-- Accent dots -->
+      <circle cx="-6" cy="0" r="1" fill="url(#accentGradient)" opacity="0.6">
+        <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="6" cy="0" r="1" fill="url(#accentGradient)" opacity="0.6">
+        <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  
+  <!-- Contemporary typography -->
+  <g transform="translate(45, 25)">
+    <!-- Individual letter positioning for proper coloring -->
+    
+    <!-- "Sp" -->
+    <text x="0" y="0" 
+          font-family="'Inter', -apple-system, system-ui, sans-serif" 
+          font-size="28" 
+          font-weight="600" 
+          letter-spacing="-0.5px"
+          dominant-baseline="central"
+          fill="url(#primaryGradient)">
+      Sp
+      <animate attributeName="opacity" values="0.95;1;0.95" dur="4s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- "eX" with bright cyan -->
+    <text x="32" y="0" 
+          font-family="'Inter', -apple-system, system-ui, sans-serif" 
+          font-size="28" 
+          font-weight="600" 
+          letter-spacing="-0.5px"
+          dominant-baseline="central"
+          fill="#00d4ff">
+      eX
+      <animate attributeName="opacity" values="0.95;1;0.95" dur="4s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- "oP" -->
+    <text x="66" y="0" 
+          font-family="'Inter', -apple-system, system-ui, sans-serif" 
+          font-size="28" 
+          font-weight="600" 
+          letter-spacing="-0.5px"
+          dominant-baseline="central"
+          fill="url(#primaryGradient)">
+      oP
+      <animate attributeName="opacity" values="0.95;1;0.95" dur="4s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- Minimal underline accent -->
+    <rect x="50" y="8" width="12" height="1" 
+          fill="url(#accentGradient)" 
+          rx="0.5" 
+          opacity="0.4">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Clean connecting element -->
+  <line x1="35" y1="25" x2="42" y2="25" 
+        stroke="url(#accentGradient)" 
+        stroke-width="1" 
+        opacity="0.3">
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="4s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Minimal floating accents -->
+  <g opacity="0.3">
+    <rect x="165" y="12" width="2" height="2" fill="url(#accentGradient)" rx="1">
+      <animate attributeName="y" values="12;10;12" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="172" cy="20" r="1.5" fill="url(#primaryGradient)" opacity="0.5">
+      <animate attributeName="r" values="1.5;2;1.5" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
