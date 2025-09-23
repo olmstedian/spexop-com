@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy:vercel": "vercel --prod",
+    "deploy:vps": "./scripts/deploy-vps.sh",
+    "test:gmail": "node scripts/test-gmail.js"
   },
   "dependencies": {
     "@types/nodemailer": "^7.0.1",

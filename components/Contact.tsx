@@ -22,31 +22,6 @@ export default function Contact() {
     setError(null)
 
     try {
-      // Check if we're in a static environment (no API routes)
-      const isStatic = process.env.NODE_ENV === 'production' && !window.location.hostname.includes('localhost')
-      
-      if (isStatic) {
-        // For static deployment, create mailto link
-        const subject = `Contact from ${formData.name} - ${formData.company || 'Web Contact'}`
-        const body = `Name: ${formData.name}
-Email: ${formData.email}
-Company: ${formData.company || 'Not specified'}
-Project Type: ${formData.projectType || 'Not specified'}
-Budget: ${formData.budget || 'Not specified'}
-
-Message:
-${formData.message}`
-        
-        const mailtoLink = `mailto:ccakar@spexop.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-        window.location.href = mailtoLink
-        
-        setIsSubmitted(true)
-        setTimeout(() => {
-          setFormData({ name: '', email: '', company: '', projectType: '', budget: '', message: '' })
-          setIsSubmitted(false)
-        }, 5000)
-        return
-      }
 
       const response = await fetch('/api/contact', {
         method: 'POST',
