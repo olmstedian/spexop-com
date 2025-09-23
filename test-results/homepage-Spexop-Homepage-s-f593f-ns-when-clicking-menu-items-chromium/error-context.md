@@ -1,0 +1,959 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - button "Spexop Logo" [ref=e8] [cursor=pointer]:
+        - img "Spexop Logo" [ref=e9] [cursor=pointer]
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - button "Home" [ref=e13] [cursor=pointer]:
+            - generic [ref=e14] [cursor=pointer]:
+              - img [ref=e15] [cursor=pointer]
+              - text: Home
+          - button "Services" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20] [cursor=pointer]:
+              - img [ref=e21] [cursor=pointer]
+              - text: Services
+          - button "Portfolio" [ref=e24] [cursor=pointer]:
+            - generic [ref=e25] [cursor=pointer]:
+              - img [ref=e26] [cursor=pointer]
+              - text: Portfolio
+          - button "Process" [ref=e32] [cursor=pointer]:
+            - generic [ref=e33] [cursor=pointer]:
+              - img [ref=e34] [cursor=pointer]
+              - text: Process
+          - button "About" [ref=e37] [cursor=pointer]:
+            - generic [ref=e38] [cursor=pointer]:
+              - img [ref=e39] [cursor=pointer]
+              - text: About
+          - button "Contact" [ref=e44] [cursor=pointer]:
+            - generic [ref=e45] [cursor=pointer]:
+              - img [ref=e46] [cursor=pointer]
+              - text: Contact
+        - button "Get Started" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51] [cursor=pointer]:
+            - img [ref=e52] [cursor=pointer]
+            - text: Get Started
+  - button:
+    - generic:
+      - img
+  - generic:
+    - button "We're Online":
+      - generic: We're Online
+      - img
+  - main [ref=e56]:
+    - generic [ref=e87]:
+      - generic [ref=e89]:
+        - img [ref=e90]
+        - generic [ref=e92]: Crafting Digital Excellence
+      - heading "Transform Ideas Into Digital Reality" [level=1] [ref=e94]:
+        - generic [ref=e95]: Transform Ideas Into
+        - generic [ref=e96]: Digital Reality
+      - paragraph [ref=e97]: We design and develop stunning websites and applications that captivate users, drive engagement, and accelerate your business growth in the digital age.
+      - generic [ref=e98]:
+        - button "Start Your Project" [ref=e99] [cursor=pointer]:
+          - generic [ref=e100] [cursor=pointer]:
+            - img [ref=e101] [cursor=pointer]
+            - text: Start Your Project
+            - img [ref=e103] [cursor=pointer]
+        - button "Explore Our Work" [ref=e106] [cursor=pointer]:
+          - generic [ref=e107] [cursor=pointer]:
+            - img [ref=e108] [cursor=pointer]
+            - text: Explore Our Work
+            - img [ref=e111] [cursor=pointer]
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - img [ref=e122]
+          - text: Our Services
+        - heading "Solutions That Drive Success" [level=2] [ref=e125]:
+          - text: Solutions That
+          - generic [ref=e126]: Drive Success
+        - paragraph [ref=e127]: From stunning websites to complex applications, we deliver cutting-edge digital solutions tailored to your business needs
+      - generic [ref=e128]:
+        - generic [ref=e130]:
+          - generic [ref=e132]:
+            - img [ref=e134]
+            - img [ref=e139]
+          - heading "Web Apps" [level=3] [ref=e141]
+          - paragraph [ref=e142]: Modern, responsive business platforms accessible anywhere.
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - img [ref=e146]
+              - generic [ref=e149]: React & Next.js
+            - listitem [ref=e150]:
+              - img [ref=e152]
+              - generic [ref=e155]: TypeScript
+            - listitem [ref=e156]:
+              - img [ref=e158]
+              - generic [ref=e161]: Responsive Design
+            - listitem [ref=e162]:
+              - img [ref=e164]
+              - generic [ref=e167]: Cloud Deployment
+          - button "Get Started" [ref=e168] [cursor=pointer]:
+            - text: Get Started
+            - img [ref=e169] [cursor=pointer]
+        - generic [ref=e171]:
+          - generic [ref=e173]: MOST POPULAR
+          - generic [ref=e174]:
+            - generic [ref=e176]:
+              - img [ref=e178]
+              - img [ref=e181]
+            - heading "Mobile Apps" [level=3] [ref=e183]
+            - paragraph [ref=e184]: iOS & Android apps that bring your service into your customer's pocket.
+            - list [ref=e185]:
+              - listitem [ref=e186]:
+                - img [ref=e188]
+                - generic [ref=e191]: Flutter Cross-Platform
+              - listitem [ref=e192]:
+                - img [ref=e194]
+                - generic [ref=e197]: Native iOS/Android
+              - listitem [ref=e198]:
+                - img [ref=e200]
+                - generic [ref=e203]: Push Notifications
+              - listitem [ref=e204]:
+                - img [ref=e206]
+                - generic [ref=e209]: Offline Support
+            - button "Get Started" [ref=e210] [cursor=pointer]:
+              - text: Get Started
+              - img [ref=e211] [cursor=pointer]
+        - generic [ref=e214]:
+          - generic [ref=e216]:
+            - img [ref=e218]
+            - img [ref=e222]
+          - heading "Backend Systems" [level=3] [ref=e224]
+          - paragraph [ref=e225]: Secure APIs & dashboards to streamline your operations.
+          - list [ref=e226]:
+            - listitem [ref=e227]:
+              - img [ref=e229]
+              - generic [ref=e232]: REST & GraphQL APIs
+            - listitem [ref=e233]:
+              - img [ref=e235]
+              - generic [ref=e238]: Database Design
+            - listitem [ref=e239]:
+              - img [ref=e241]
+              - generic [ref=e244]: Authentication
+            - listitem [ref=e245]:
+              - img [ref=e247]
+              - generic [ref=e250]: Monitoring
+          - button "Get Started" [ref=e251] [cursor=pointer]:
+            - text: Get Started
+            - img [ref=e252] [cursor=pointer]
+        - generic [ref=e255]:
+          - generic [ref=e257]:
+            - img [ref=e259]
+            - img [ref=e262]
+          - heading "MVP Development" [level=3] [ref=e264]
+          - paragraph [ref=e265]: Launch-ready prototypes so you can validate ideas without big costs.
+          - list [ref=e266]:
+            - listitem [ref=e267]:
+              - img [ref=e269]
+              - generic [ref=e272]: Rapid Prototyping
+            - listitem [ref=e273]:
+              - img [ref=e275]
+              - generic [ref=e278]: User Testing
+            - listitem [ref=e279]:
+              - img [ref=e281]
+              - generic [ref=e284]: Iterative Design
+            - listitem [ref=e285]:
+              - img [ref=e287]
+              - generic [ref=e290]: Quick Launch
+          - button "Get Started" [ref=e291] [cursor=pointer]:
+            - text: Get Started
+            - img [ref=e292] [cursor=pointer]
+        - generic [ref=e295]:
+          - generic [ref=e297]:
+            - img [ref=e299]
+            - img [ref=e303]
+          - heading "Website Development" [level=3] [ref=e305]
+          - paragraph [ref=e306]: Modern, responsive websites that convert visitors into customers with exceptional user experience.
+          - list [ref=e307]:
+            - listitem [ref=e308]:
+              - img [ref=e310]
+              - generic [ref=e313]: Custom Design
+            - listitem [ref=e314]:
+              - img [ref=e316]
+              - generic [ref=e319]: Mobile-First
+            - listitem [ref=e320]:
+              - img [ref=e322]
+              - generic [ref=e325]: SEO Optimized
+            - listitem [ref=e326]:
+              - img [ref=e328]
+              - generic [ref=e331]: Fast Loading
+          - button "Get Started" [ref=e332] [cursor=pointer]:
+            - text: Get Started
+            - img [ref=e333] [cursor=pointer]
+        - generic [ref=e336]:
+          - generic [ref=e338]:
+            - img [ref=e340]
+            - img [ref=e345]
+          - heading "Website with CMS" [level=3] [ref=e347]
+          - paragraph [ref=e348]: Content-managed websites with powerful authoring tools for easy content updates and management.
+          - list [ref=e349]:
+            - listitem [ref=e350]:
+              - img [ref=e352]
+              - generic [ref=e355]: Headless CMS
+            - listitem [ref=e356]:
+              - img [ref=e358]
+              - generic [ref=e361]: Easy Editing
+            - listitem [ref=e362]:
+              - img [ref=e364]
+              - generic [ref=e367]: Multi-user
+            - listitem [ref=e368]:
+              - img [ref=e370]
+              - generic [ref=e373]: Version Control
+          - button "Get Started" [ref=e374] [cursor=pointer]:
+            - text: Get Started
+            - img [ref=e375] [cursor=pointer]
+      - generic [ref=e378]:
+        - heading "Need a Custom Solution?" [level=3] [ref=e379]
+        - paragraph [ref=e380]: Let's discuss your unique requirements and create a tailored solution that perfectly fits your business needs
+        - generic [ref=e381]:
+          - button "Schedule Consultation" [ref=e382] [cursor=pointer]:
+            - img [ref=e383] [cursor=pointer]
+            - text: Schedule Consultation
+            - img [ref=e385] [cursor=pointer]
+          - button "View Case Studies" [ref=e387] [cursor=pointer]:
+            - img [ref=e388] [cursor=pointer]
+            - text: View Case Studies
+    - generic [ref=e396]:
+      - generic [ref=e397]:
+        - generic [ref=e398]:
+          - img [ref=e399]
+          - text: Portfolio Showcase
+        - heading "Our Latest Masterpieces" [level=2] [ref=e403]:
+          - text: Our Latest
+          - generic [ref=e404]: Masterpieces
+        - paragraph [ref=e405]: Explore our portfolio of innovative digital solutions that have transformed businesses and delighted users worldwide
+        - generic [ref=e406]:
+          - button "All6" [ref=e407] [cursor=pointer]:
+            - text: All
+            - generic [ref=e408] [cursor=pointer]: "6"
+          - button "Intelligence Systems" [ref=e409] [cursor=pointer]
+          - button "Surveillance Platforms" [ref=e410] [cursor=pointer]
+          - button "Data Processing" [ref=e411] [cursor=pointer]
+          - button "Web Applications" [ref=e412] [cursor=pointer]
+      - generic [ref=e413]:
+        - generic [ref=e415]:
+          - generic [ref=e417]:
+            - img [ref=e418]
+            - text: FEATURED
+          - generic [ref=e421]: Live
+          - generic [ref=e423]:
+            - img "Argus Eyes website screenshot" [ref=e424]
+            - generic [ref=e427]:
+              - button "View Live Site" [ref=e428] [cursor=pointer]:
+                - img [ref=e429] [cursor=pointer]
+                - text: View Live Site
+              - button [ref=e433] [cursor=pointer]:
+                - img [ref=e434] [cursor=pointer]
+          - generic [ref=e437]:
+            - generic [ref=e438]:
+              - generic [ref=e439]:
+                - generic [ref=e440]: Intelligence Systems
+                - generic [ref=e441]: •
+                - generic [ref=e442]: 6 Technologies
+              - heading "Argus Eyes" [level=3] [ref=e443]
+              - paragraph [ref=e444]: Signal Intelligence Systems Website
+            - paragraph [ref=e445]: Built a secure, high-performance website showcasing Argus Eyes' specialized signal intelligence solutions including real-time threat detection, secure command consoles, and modular architecture for various operational environments.
+            - generic [ref=e446]:
+              - generic [ref=e447]:
+                - generic [ref=e448]: 0.8s
+                - generic [ref=e449]: loadTime
+              - generic [ref=e450]:
+                - generic [ref=e451]: Military-grade
+                - generic [ref=e452]: security
+              - generic [ref=e453]:
+                - generic [ref=e454]: Regulatory
+                - generic [ref=e455]: compliance
+              - generic [ref=e456]:
+                - generic [ref=e457]: 99.9%
+                - generic [ref=e458]: uptime
+            - generic [ref=e459]:
+              - generic [ref=e460]: React.js
+              - generic [ref=e461]: Node.js
+              - generic [ref=e462]: Express.js
+              - generic [ref=e463]: MongoDB
+              - generic [ref=e464]: Docker
+              - generic [ref=e465]: Nginx
+            - generic [ref=e466]:
+              - button "View Project" [ref=e467] [cursor=pointer]:
+                - img [ref=e468] [cursor=pointer]
+                - text: View Project
+              - button [ref=e472] [cursor=pointer]:
+                - img [ref=e473] [cursor=pointer]
+        - generic [ref=e477]:
+          - generic [ref=e479]: Live
+          - generic [ref=e481]:
+            - img "NGC 315 Defence Technologies website screenshot" [ref=e482]
+            - generic [ref=e485]:
+              - button "View Live Site" [ref=e486] [cursor=pointer]:
+                - img [ref=e487] [cursor=pointer]
+                - text: View Live Site
+              - button [ref=e491] [cursor=pointer]:
+                - img [ref=e492] [cursor=pointer]
+          - generic [ref=e495]:
+            - generic [ref=e496]:
+              - generic [ref=e497]:
+                - generic [ref=e498]: Web Applications
+                - generic [ref=e499]: •
+                - generic [ref=e500]: 4 Technologies
+              - heading "NGC 315 Defence Technologies" [level=3] [ref=e501]
+              - paragraph [ref=e502]: Defense Technology Solutions Website
+            - paragraph [ref=e503]: Professional website for cutting-edge defense technologies and military defense systems serving government and defense clients.
+            - generic [ref=e504]:
+              - generic [ref=e505]:
+                - generic [ref=e506]: 1.2s
+                - generic [ref=e507]: loadTime
+              - generic [ref=e508]:
+                - generic [ref=e509]: Defense-grade
+                - generic [ref=e510]: security
+            - generic [ref=e511]:
+              - generic [ref=e512]: HTML5
+              - generic [ref=e513]: CSS3
+              - generic [ref=e514]: JavaScript
+              - generic [ref=e515]: Responsive Design
+            - generic [ref=e516]:
+              - button "View Project" [ref=e517] [cursor=pointer]:
+                - img [ref=e518] [cursor=pointer]
+                - text: View Project
+              - button [ref=e522] [cursor=pointer]:
+                - img [ref=e523] [cursor=pointer]
+        - generic [ref=e527]:
+          - generic [ref=e529]: Live
+          - generic [ref=e531]:
+            - img "MDS 16 Defence & Space website screenshot" [ref=e532]
+            - generic [ref=e535]:
+              - button "View Live Site" [ref=e536] [cursor=pointer]:
+                - img [ref=e537] [cursor=pointer]
+                - text: View Live Site
+              - button [ref=e541] [cursor=pointer]:
+                - img [ref=e542] [cursor=pointer]
+          - generic [ref=e545]:
+            - generic [ref=e546]:
+              - generic [ref=e547]:
+                - generic [ref=e548]: Web Applications
+                - generic [ref=e549]: •
+                - generic [ref=e550]: 4 Technologies
+              - heading "MDS 16 Defence & Space" [level=3] [ref=e551]
+              - paragraph [ref=e552]: Military Defence & Space Solutions
+            - paragraph [ref=e553]: Advanced defense technologies website for integrated solutions in military defense systems and space technologies.
+            - generic [ref=e554]:
+              - generic [ref=e555]:
+                - generic [ref=e556]: 1.1s
+                - generic [ref=e557]: loadTime
+              - generic [ref=e558]:
+                - generic [ref=e559]: Military-grade
+                - generic [ref=e560]: security
+            - generic [ref=e561]:
+              - generic [ref=e562]: HTML5
+              - generic [ref=e563]: CSS3
+              - generic [ref=e564]: JavaScript
+              - generic [ref=e565]: Responsive Design
+            - generic [ref=e566]:
+              - button "View Project" [ref=e567] [cursor=pointer]:
+                - img [ref=e568] [cursor=pointer]
+                - text: View Project
+              - button [ref=e572] [cursor=pointer]:
+                - img [ref=e573] [cursor=pointer]
+        - generic [ref=e577]:
+          - generic [ref=e579]:
+            - img [ref=e580]
+            - text: FEATURED
+          - generic [ref=e583]: Confidential
+          - generic [ref=e585]:
+            - img "Argus Eyes Dashboard V3 website screenshot" [ref=e586]
+            - generic [ref=e589]:
+              - button "View Live Site" [ref=e590] [cursor=pointer]:
+                - img [ref=e591] [cursor=pointer]
+                - text: View Live Site
+              - button [ref=e595] [cursor=pointer]:
+                - img [ref=e596] [cursor=pointer]
+          - generic [ref=e599]:
+            - generic [ref=e600]:
+              - generic [ref=e601]:
+                - generic [ref=e602]: Intelligence Systems
+                - generic [ref=e603]: •
+                - generic [ref=e604]: 6 Technologies
+              - heading "Argus Eyes Dashboard V3" [level=3] [ref=e605]
+              - paragraph [ref=e606]: Enterprise SIGINT Platform
+            - paragraph [ref=e607]: Developed an enterprise-grade SIGINT platform providing real-time signal intelligence, automated correlation, geographic intelligence, and advanced case management capabilities. Built with modern enterprise architecture patterns, it offers sophisticated analysis of mobile device signals, target tracking, and complex intelligence workflows at scale with 100K+ daily signal processing capability.
+            - generic [ref=e608]:
+              - generic [ref=e609]:
+                - generic [ref=e610]: 100K+/day
+                - generic [ref=e611]: signals
+              - generic [ref=e612]:
+                - generic [ref=e613]: <5s
+                - generic [ref=e614]: latency
+              - generic [ref=e615]:
+                - generic [ref=e616]: Enterprise-grade
+                - generic [ref=e617]: security
+              - generic [ref=e618]:
+                - generic [ref=e619]: High-availability
+                - generic [ref=e620]: scalability
+            - generic [ref=e621]:
+              - generic [ref=e622]: TypeScript
+              - generic [ref=e623]: JavaScript
+              - generic [ref=e624]: PLpgSQL
+              - generic [ref=e625]: Shell
+              - generic [ref=e626]: CSS
+              - generic [ref=e627]: Python
+            - generic [ref=e628]:
+              - button "View Project" [ref=e629] [cursor=pointer]:
+                - img [ref=e630] [cursor=pointer]
+                - text: View Project
+              - button [ref=e634] [cursor=pointer]:
+                - img [ref=e635] [cursor=pointer]
+        - generic [ref=e639]:
+          - generic [ref=e641]: Production Ready
+          - generic [ref=e643]:
+            - img "AEDSS website screenshot" [ref=e644]
+            - generic [ref=e647]:
+              - button "View Live Site" [ref=e648] [cursor=pointer]:
+                - img [ref=e649] [cursor=pointer]
+                - text: View Live Site
+              - button [ref=e653] [cursor=pointer]:
+                - img [ref=e654] [cursor=pointer]
+          - generic [ref=e657]:
+            - generic [ref=e658]:
+              - generic [ref=e659]:
+                - generic [ref=e660]: Surveillance Platforms
+                - generic [ref=e661]: •
+                - generic [ref=e662]: 6 Technologies
+              - heading "AEDSS" [level=3] [ref=e663]
+              - paragraph [ref=e664]: Advanced Electronic Device Surveillance System
+            - paragraph [ref=e665]: Production-ready surveillance system with real-time triangulation simulation, MSSQL to PostgreSQL data synchronization, and comprehensive monitoring dashboard.
+            - generic [ref=e666]:
+              - generic [ref=e667]:
+                - generic [ref=e668]: 86+
+                - generic [ref=e669]: scans
+              - generic [ref=e670]:
+                - generic [ref=e671]: 15s
+                - generic [ref=e672]: syncInterval
+            - generic [ref=e673]:
+              - generic [ref=e674]: NestJS
+              - generic [ref=e675]: React
+              - generic [ref=e676]: TypeScript
+              - generic [ref=e677]: PostgreSQL
+              - generic [ref=e678]: +2 more
+            - generic [ref=e679]:
+              - button "View Project" [ref=e680] [cursor=pointer]:
+                - img [ref=e681] [cursor=pointer]
+                - text: View Project
+              - button [ref=e685] [cursor=pointer]:
+                - img [ref=e686] [cursor=pointer]
+        - generic [ref=e690]:
+          - generic [ref=e692]: Production Ready
+          - generic [ref=e694]:
+            - img "AE-TCP-Listener website screenshot" [ref=e695]
+            - generic [ref=e698]:
+              - button "View Live Site" [ref=e699] [cursor=pointer]:
+                - img [ref=e700] [cursor=pointer]
+                - text: View Live Site
+              - button [ref=e704] [cursor=pointer]:
+                - img [ref=e705] [cursor=pointer]
+          - generic [ref=e708]:
+            - generic [ref=e709]:
+              - generic [ref=e710]:
+                - generic [ref=e711]: Data Processing
+                - generic [ref=e712]: •
+                - generic [ref=e713]: 6 Technologies
+              - heading "AE-TCP-Listener" [level=3] [ref=e714]
+              - paragraph [ref=e715]: High-Performance TCP Frame Ingestion Service
+            - paragraph [ref=e716]: Lightweight Node.js service that listens for TCP frames and stores them in multiple databases with comprehensive observability and real-time VPS synchronization.
+            - generic [ref=e717]:
+              - generic [ref=e718]:
+                - generic [ref=e719]: 1000+/sec
+                - generic [ref=e720]: throughput
+              - generic [ref=e721]:
+                - generic [ref=e722]: <100ms
+                - generic [ref=e723]: latency
+            - generic [ref=e724]:
+              - generic [ref=e725]: Node.js
+              - generic [ref=e726]: TypeScript
+              - generic [ref=e727]: PostgreSQL
+              - generic [ref=e728]: MS Access
+              - generic [ref=e729]: +2 more
+            - generic [ref=e730]:
+              - button "View Project" [ref=e731] [cursor=pointer]:
+                - img [ref=e732] [cursor=pointer]
+                - text: View Project
+              - button [ref=e736] [cursor=pointer]:
+                - img [ref=e737] [cursor=pointer]
+      - generic [ref=e741]:
+        - heading "Ready to Build Something Amazing?" [level=3] [ref=e742]
+        - paragraph [ref=e743]: Join our growing list of successful projects. Let's turn your vision into a digital masterpiece.
+        - button "Start Your Project" [ref=e745] [cursor=pointer]:
+          - img [ref=e746] [cursor=pointer]
+          - text: Start Your Project
+          - img [ref=e749] [cursor=pointer]
+    - generic [ref=e753]:
+      - generic [ref=e754]:
+        - generic [ref=e755]:
+          - img [ref=e756]
+          - generic [ref=e761]: Our Process
+        - heading "From Concept to Launch" [level=2] [ref=e762]:
+          - text: From Concept to
+          - generic [ref=e763]: Launch
+        - paragraph [ref=e764]: Our proven 5-step process ensures your project is delivered on time, within budget, and exceeds expectations every step of the way.
+      - generic [ref=e766]:
+        - generic [ref=e767]:
+          - generic [ref=e768]:
+            - generic [ref=e769]:
+              - img [ref=e771]
+              - generic [ref=e773]: "01"
+            - generic [ref=e774]:
+              - heading "Discovery & Strategy" [level=3] [ref=e775]
+              - paragraph [ref=e776]: We start by understanding your business goals, target audience, and technical requirements through detailed consultation.
+            - generic [ref=e777]:
+              - generic [ref=e780]: Requirements analysis
+              - generic [ref=e783]: User research
+              - generic [ref=e786]: Technical planning
+              - generic [ref=e789]: Timeline & budget
+          - generic [ref=e794]:
+            - img [ref=e795]
+            - generic [ref=e797]: Step 1
+        - generic [ref=e800]:
+          - generic [ref=e801]:
+            - generic [ref=e802]:
+              - img [ref=e804]
+              - generic [ref=e806]: "02"
+            - generic [ref=e807]:
+              - heading "Design & Planning" [level=3] [ref=e808]
+              - paragraph [ref=e809]: Our design team creates wireframes, prototypes, and visual designs that align with your brand and user experience goals.
+            - generic [ref=e810]:
+              - generic [ref=e813]: UI/UX design
+              - generic [ref=e816]: Wireframing
+              - generic [ref=e819]: Prototyping
+              - generic [ref=e822]: Design system
+          - generic [ref=e827]:
+            - img [ref=e828]
+            - generic [ref=e830]: Step 2
+        - generic [ref=e833]:
+          - generic [ref=e834]:
+            - generic [ref=e835]:
+              - img [ref=e837]
+              - generic [ref=e840]: "03"
+            - generic [ref=e841]:
+              - heading "Development" [level=3] [ref=e842]
+              - paragraph [ref=e843]: We build your website using modern technologies and best practices, ensuring performance, security, and scalability.
+            - generic [ref=e844]:
+              - generic [ref=e847]: Frontend development
+              - generic [ref=e850]: Backend architecture
+              - generic [ref=e853]: Database design
+              - generic [ref=e856]: API integration
+          - generic [ref=e861]:
+            - img [ref=e862]
+            - generic [ref=e865]: Step 3
+        - generic [ref=e868]:
+          - generic [ref=e869]:
+            - generic [ref=e870]:
+              - img [ref=e872]
+              - generic [ref=e875]: "04"
+            - generic [ref=e876]:
+              - heading "Testing & QA" [level=3] [ref=e877]
+              - paragraph [ref=e878]: Comprehensive testing across devices and browsers ensures your website works flawlessly for all users.
+            - generic [ref=e879]:
+              - generic [ref=e882]: Cross-browser testing
+              - generic [ref=e885]: Mobile responsiveness
+              - generic [ref=e888]: Performance optimization
+              - generic [ref=e891]: Security audits
+          - generic [ref=e896]:
+            - img [ref=e897]
+            - generic [ref=e900]: Step 4
+        - generic [ref=e903]:
+          - generic [ref=e904]:
+            - generic [ref=e905]:
+              - img [ref=e907]
+              - generic [ref=e912]: "05"
+            - generic [ref=e913]:
+              - heading "Launch & Support" [level=3] [ref=e914]
+              - paragraph [ref=e915]: We handle the deployment and provide ongoing support to keep your website running smoothly and up-to-date.
+            - generic [ref=e916]:
+              - generic [ref=e919]: Deployment setup
+              - generic [ref=e922]: Performance monitoring
+              - generic [ref=e925]: Regular updates
+              - generic [ref=e928]: Ongoing support
+          - generic [ref=e933]:
+            - img [ref=e934]
+            - generic [ref=e939]: Step 5
+      - generic [ref=e943]:
+        - heading "Ready to Start Your Project?" [level=3] [ref=e944]
+        - paragraph [ref=e945]: Let's discuss your vision and create a roadmap to bring it to life.
+        - generic [ref=e946]:
+          - link "Get Free Consultation" [ref=e947] [cursor=pointer]:
+            - /url: "#contact"
+            - img [ref=e948] [cursor=pointer]
+            - text: Get Free Consultation
+          - link "View Case Studies" [ref=e950] [cursor=pointer]:
+            - /url: "#portfolio"
+    - generic [ref=e952]:
+      - generic [ref=e953]:
+        - paragraph [ref=e954]: Trusted by forward-thinking companies
+        - generic [ref=e955]:
+          - generic [ref=e956]:
+            - generic [ref=e958]: AE
+            - generic [ref=e959]: Argus Eyes
+          - generic [ref=e960]:
+            - generic [ref=e962]: NGC
+            - generic [ref=e963]: NGC 315 Defense Technologies
+          - generic [ref=e964]:
+            - generic [ref=e966]: MDS
+            - generic [ref=e967]: MDS 16 Defense & Space
+          - generic [ref=e968]:
+            - generic [ref=e970]: IS
+            - generic [ref=e971]: Intelligence Services
+          - generic [ref=e972]:
+            - generic [ref=e974]: DS
+            - generic [ref=e975]: Defense Solutions
+          - generic [ref=e976]:
+            - generic [ref=e978]: SS
+            - generic [ref=e979]: Security Systems
+      - generic [ref=e980]:
+        - generic [ref=e981]:
+          - generic [ref=e982]:
+            - img [ref=e983]
+            - text: Client Success Stories
+          - heading "What Our Clients Say" [level=2] [ref=e985]:
+            - text: What Our
+            - generic [ref=e986]: Clients
+            - text: Say
+          - paragraph [ref=e987]: Trusted by security and intelligence professionals worldwide. Here's what industry leaders say about our specialized solutions.
+        - generic [ref=e988]:
+          - generic [ref=e989]:
+            - img [ref=e992]
+            - generic [ref=e995]:
+              - img [ref=e996]
+              - img [ref=e998]
+              - img [ref=e1000]
+              - img [ref=e1002]
+              - img [ref=e1004]
+            - paragraph [ref=e1006]: "\"The Argus Eyes Dashboard V3 SIGINT platform delivered exceeded all expectations. The real-time processing capabilities and advanced analytics have significantly enhanced our operational effectiveness. The system handles 100K+ signals daily with exceptional reliability.\""
+            - generic [ref=e1007]:
+              - img [ref=e1008]
+              - generic [ref=e1011]: 100K+ signals processed daily
+            - generic [ref=e1012]:
+              - generic [ref=e1013]: SD
+              - generic [ref=e1014]:
+                - generic [ref=e1015]: Security Director
+                - generic [ref=e1016]: Director of Operations, Argus Eyes
+                - generic [ref=e1017]: "Project: Argus Eyes Dashboard V3"
+          - generic [ref=e1019]:
+            - img [ref=e1022]
+            - generic [ref=e1025]:
+              - img [ref=e1026]
+              - img [ref=e1028]
+              - img [ref=e1030]
+              - img [ref=e1032]
+              - img [ref=e1034]
+            - paragraph [ref=e1036]: "\"The AEDSS surveillance system integration was flawless. The triangulation simulation and real-time monitoring capabilities provide unprecedented operational insights. The team's expertise in handling sensitive data while maintaining security standards was outstanding.\""
+            - generic [ref=e1037]:
+              - img [ref=e1038]
+              - generic [ref=e1041]: Zero security incidents
+            - generic [ref=e1042]:
+              - generic [ref=e1043]: TL
+              - generic [ref=e1044]:
+                - generic [ref=e1045]: Technical Lead
+                - generic [ref=e1046]: Senior Systems Engineer, Argus Eyes
+                - generic [ref=e1047]: "Project: AEDSS"
+          - generic [ref=e1049]:
+            - img [ref=e1052]
+            - generic [ref=e1055]:
+              - img [ref=e1056]
+              - img [ref=e1058]
+              - img [ref=e1060]
+              - img [ref=e1062]
+              - img [ref=e1064]
+            - paragraph [ref=e1066]: "\"The AE-TCP-Listener data processing infrastructure has revolutionized our workflow. The multi-database synchronization and comprehensive observability features ensure we never miss critical information. The system's performance under high load is exceptional.\""
+            - generic [ref=e1067]:
+              - img [ref=e1068]
+              - generic [ref=e1071]: 99.9% uptime achieved
+            - generic [ref=e1072]:
+              - generic [ref=e1073]: OM
+              - generic [ref=e1074]:
+                - generic [ref=e1075]: Operations Manager
+                - generic [ref=e1076]: Head of Technical Operations, Argus Eyes
+                - generic [ref=e1077]: "Project: AE-TCP-Listener"
+    - generic [ref=e1081]:
+      - generic [ref=e1082]:
+        - generic [ref=e1083]:
+          - img [ref=e1084]
+          - text: Frequently Asked Questions
+        - heading "Got Questions?" [level=2] [ref=e1087]:
+          - text: Got
+          - generic [ref=e1088]: Questions?
+        - paragraph [ref=e1089]: Here are answers to the most common questions about our development services, from simple websites to complex enterprise applications across all industries.
+      - generic [ref=e1090]:
+        - generic [ref=e1091]:
+          - button "What industries and types of projects do you work with?" [ref=e1092] [cursor=pointer]:
+            - generic [ref=e1093] [cursor=pointer]: What industries and types of projects do you work with?
+            - img [ref=e1094] [cursor=pointer]
+          - paragraph [ref=e1098]: We work across all industries including e-commerce, healthcare, finance, education, government, defense, and more. Our projects range from simple business websites to complex enterprise applications, data processing systems, surveillance platforms, and specialized intelligence solutions. We adapt our approach to meet each client's unique requirements.
+        - generic [ref=e1099]:
+          - button "What technologies and frameworks do you use?" [ref=e1100] [cursor=pointer]:
+            - generic [ref=e1101] [cursor=pointer]: What technologies and frameworks do you use?
+            - img [ref=e1102] [cursor=pointer]
+          - paragraph [ref=e1106]: We use modern, enterprise-grade technologies including React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL, MongoDB, Redis, and various cloud platforms. Our tech stack is chosen based on project requirements, scalability needs, and industry best practices. We stay current with the latest technologies while ensuring proven reliability.
+        - generic [ref=e1107]:
+          - button "How do you ensure security and data protection?" [ref=e1108] [cursor=pointer]:
+            - generic [ref=e1109] [cursor=pointer]: How do you ensure security and data protection?
+            - img [ref=e1110] [cursor=pointer]
+          - paragraph [ref=e1114]: Security is fundamental to all our projects. We implement industry-standard security measures including authentication, authorization, data encryption, secure APIs, and compliance with relevant regulations (GDPR, HIPAA, SOC 2, etc.). For sensitive projects, we follow enhanced security protocols and confidentiality agreements.
+        - generic [ref=e1115]:
+          - button "What is your experience with high-performance applications?" [ref=e1116] [cursor=pointer]:
+            - generic [ref=e1117] [cursor=pointer]: What is your experience with high-performance applications?
+            - img [ref=e1118] [cursor=pointer]
+          - paragraph [ref=e1122]: We have extensive experience building scalable applications that handle high data volumes and concurrent users. Our solutions include real-time data processing, advanced caching strategies, database optimization, and comprehensive monitoring. We've built systems processing 100K+ operations daily with sub-5-second response times.
+        - generic [ref=e1123]:
+          - button "Do you provide ongoing support and maintenance?" [ref=e1124] [cursor=pointer]:
+            - generic [ref=e1125] [cursor=pointer]: Do you provide ongoing support and maintenance?
+            - img [ref=e1126] [cursor=pointer]
+          - paragraph [ref=e1130]: Yes, we offer comprehensive support packages tailored to your needs. This includes regular updates, security monitoring, performance optimization, bug fixes, feature enhancements, and technical support. We provide both basic maintenance and enterprise-level support with SLA guarantees.
+        - generic [ref=e1131]:
+          - button "Can you work with existing systems and integrate new solutions?" [ref=e1132] [cursor=pointer]:
+            - generic [ref=e1133] [cursor=pointer]: Can you work with existing systems and integrate new solutions?
+            - img [ref=e1134] [cursor=pointer]
+          - paragraph [ref=e1138]: Absolutely. We specialize in integrating with existing infrastructure including databases, APIs, third-party services, and legacy systems. Our solutions are designed for seamless integration while maintaining data integrity and system stability. We can work with various platforms and technologies.
+        - generic [ref=e1139]:
+          - button "What is your development process and timeline?" [ref=e1140] [cursor=pointer]:
+            - generic [ref=e1141] [cursor=pointer]: What is your development process and timeline?
+            - img [ref=e1142] [cursor=pointer]
+          - paragraph [ref=e1146]: "Our development process includes requirements analysis, architecture design, iterative development, testing, and deployment. Timelines vary based on project complexity: simple websites (2-4 weeks), complex web applications (8-16 weeks), enterprise systems (3-6 months). We provide detailed project plans and regular updates throughout development."
+        - generic [ref=e1147]:
+          - button "Do you offer specialized solutions for sensitive industries?" [ref=e1148] [cursor=pointer]:
+            - generic [ref=e1149] [cursor=pointer]: Do you offer specialized solutions for sensitive industries?
+            - img [ref=e1150] [cursor=pointer]
+          - paragraph [ref=e1154]: Yes, we have extensive experience with sensitive projects including government, defense, healthcare, and financial applications. We follow strict confidentiality protocols, implement enhanced security measures, and comply with industry-specific regulations. Our team is experienced in handling classified and confidential information.
+      - generic [ref=e1155]:
+        - paragraph [ref=e1156]: Still have questions? We'd love to help!
+        - link "Get In Touch" [ref=e1157] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e1160]:
+      - generic [ref=e1161]:
+        - generic [ref=e1162]:
+          - img [ref=e1163]
+          - text: About Our Team
+        - heading "Why Choose Spexop" [level=2] [ref=e1168]:
+          - text: Why Choose
+          - generic [ref=e1169]: Spexop
+        - paragraph [ref=e1170]: We're specialized developers who deliver enterprise-grade solutions across all industries, from simple websites to complex intelligence systems.
+      - generic [ref=e1171]:
+        - generic [ref=e1172]:
+          - generic [ref=e1173]:
+            - heading "Specialized Expertise Across Industries" [level=3] [ref=e1174]
+            - paragraph [ref=e1175]:
+              - strong [ref=e1176]: Spexop delivers enterprise-grade solutions
+              - text: across all industries, from e-commerce platforms to specialized intelligence systems. We combine deep technical expertise with industry-specific knowledge to deliver solutions that meet your unique requirements.
+            - paragraph [ref=e1177]:
+              - text: Our approach focuses on
+              - strong [ref=e1178]: scalable architecture, security-first design, and performance optimization
+              - text: to create robust solutions that handle high data volumes, ensure data protection, and deliver exceptional user experiences.
+          - generic [ref=e1179]:
+            - generic [ref=e1180]:
+              - generic [ref=e1181]: 🏗️
+              - heading "Enterprise Architecture" [level=4] [ref=e1182]
+              - paragraph [ref=e1183]: Scalable solutions built for high performance
+            - generic [ref=e1184]:
+              - generic [ref=e1185]: 🔒
+              - heading "Security-First" [level=4] [ref=e1186]
+              - paragraph [ref=e1187]: Enterprise-grade security and compliance
+            - generic [ref=e1188]:
+              - generic [ref=e1189]: ⚡
+              - heading "High Performance" [level=4] [ref=e1190]
+              - paragraph [ref=e1191]: Optimized for speed and reliability
+            - generic [ref=e1192]:
+              - generic [ref=e1193]: 🌐
+              - heading "Multi-Industry" [level=4] [ref=e1194]
+              - paragraph [ref=e1195]: Expertise across all business sectors
+        - generic [ref=e1197]:
+          - generic [ref=e1200]:
+            - generic [ref=e1201]:
+              - generic [ref=e1202]: 🚀
+              - heading "Enterprise Tech Stack" [level=3] [ref=e1203]
+              - paragraph [ref=e1204]: Proven technologies for scalable solutions
+            - generic [ref=e1205]:
+              - generic [ref=e1206]:
+                - generic [ref=e1207]: ⚛️
+                - generic [ref=e1208]: React & Next.js
+              - generic [ref=e1209]:
+                - generic [ref=e1210]: 💎
+                - generic [ref=e1211]: TypeScript
+              - generic [ref=e1212]:
+                - generic [ref=e1213]: 🐍
+                - generic [ref=e1214]: Django & Python
+              - generic [ref=e1215]:
+                - generic [ref=e1216]: 🔧
+                - generic [ref=e1217]: Node.js & NestJS
+              - generic [ref=e1218]:
+                - generic [ref=e1219]: 📱
+                - generic [ref=e1220]: Flutter
+              - generic [ref=e1221]:
+                - generic [ref=e1222]: 🍎
+                - generic [ref=e1223]: Xcode & Swift
+              - generic [ref=e1224]:
+                - generic [ref=e1225]: 🗄️
+                - generic [ref=e1226]: PostgreSQL
+              - generic [ref=e1227]:
+                - generic [ref=e1228]: ⚡
+                - generic [ref=e1229]: Express.js
+          - generic [ref=e1230]: 💻
+          - generic [ref=e1231]: ✨
+      - generic [ref=e1232]:
+        - heading "Ready to Build Your Next Solution?" [level=3] [ref=e1233]
+        - paragraph [ref=e1234]: Let's discuss how we can help you build scalable, secure, and high-performance solutions for your business needs.
+        - link "Start Your Project Today" [ref=e1235] [cursor=pointer]:
+          - /url: "#contact"
+          - text: Start Your Project Today
+          - img [ref=e1236] [cursor=pointer]
+    - generic [ref=e1240]:
+      - generic [ref=e1241]:
+        - generic [ref=e1242]: 💬 Let's Talk
+        - heading "Have a Project in Mind?" [level=2] [ref=e1243]:
+          - text: Have a
+          - generic [ref=e1244]: Project
+          - text: in Mind?
+        - paragraph [ref=e1245]: Let's turn your vision into reality. We're here to help you build something amazing.
+      - generic [ref=e1246]:
+        - generic [ref=e1248]:
+          - generic [ref=e1249]:
+            - img [ref=e1251]
+            - generic [ref=e1253]:
+              - heading "Start Your Project" [level=3] [ref=e1254]
+              - paragraph [ref=e1255]: Tell us about your vision
+          - generic [ref=e1256]:
+            - generic [ref=e1257]:
+              - generic [ref=e1258]:
+                - generic [ref=e1259]: Full Name *
+                - generic [ref=e1260]:
+                  - img [ref=e1261]
+                  - textbox "Full Name *" [ref=e1264]
+              - generic [ref=e1265]:
+                - generic [ref=e1266]: Email Address *
+                - generic [ref=e1267]:
+                  - img [ref=e1268]
+                  - textbox "Email Address *" [ref=e1271]
+            - generic [ref=e1272]:
+              - generic [ref=e1273]:
+                - generic [ref=e1274]: Company Name
+                - textbox "Company Name" [ref=e1275]
+              - generic [ref=e1276]:
+                - generic [ref=e1277]: Project Type *
+                - combobox "Project Type *" [ref=e1278]:
+                  - option "Select project type" [selected]
+                  - option "Business Website"
+                  - option "E-commerce Store"
+                  - option "Web Application"
+                  - option "Website Redesign"
+                  - option "CMS Website"
+                  - option "Landing Page"
+                  - option "Portfolio Site"
+                  - option "Other"
+            - generic [ref=e1279]:
+              - generic [ref=e1280]: Budget Range
+              - combobox "Budget Range" [ref=e1281]:
+                - option "Select budget range" [selected]
+                - option "Under $5,000"
+                - option "$5,000 - $15,000"
+                - option "$15,000 - $50,000"
+                - option "Over $50,000"
+                - option "Let&apos;s discuss"
+            - generic [ref=e1282]:
+              - generic [ref=e1283]: Project Description *
+              - textbox "Project Description *" [ref=e1284]
+            - generic [ref=e1285]:
+              - img [ref=e1287]
+              - generic [ref=e1289]:
+                - paragraph [ref=e1290]: We typically respond within 24 hours
+                - paragraph [ref=e1291]: Your information is secure and will never be shared with third parties.
+            - button "Send Message" [ref=e1292] [cursor=pointer]:
+              - img [ref=e1293] [cursor=pointer]
+              - text: Send Message
+        - generic [ref=e1297]:
+          - generic [ref=e1298]:
+            - heading "Let's Connect" [level=3] [ref=e1299]
+            - paragraph [ref=e1300]: Ready to bring your ideas to life? We're excited to hear about your project and discuss how we can help.
+            - generic [ref=e1301]:
+              - generic [ref=e1302]:
+                - img [ref=e1304]
+                - generic [ref=e1307]:
+                  - paragraph [ref=e1308]: Response Time
+                  - paragraph [ref=e1309]: Within 24 hours
+              - generic [ref=e1310]:
+                - img [ref=e1312]
+                - generic [ref=e1315]:
+                  - paragraph [ref=e1316]: Location
+                  - paragraph [ref=e1317]: Remote & Global
+              - generic [ref=e1318]:
+                - img [ref=e1320]
+                - generic [ref=e1322]:
+                  - paragraph [ref=e1323]: Consultation
+                  - paragraph [ref=e1324]: Free initial call
+          - generic [ref=e1325]:
+            - heading "Connect With Us" [level=4] [ref=e1326]
+            - generic [ref=e1327]:
+              - link "Email contact@spexop.com" [ref=e1328] [cursor=pointer]:
+                - /url: mailto:contact@spexop.com
+                - img [ref=e1330] [cursor=pointer]
+                - generic [ref=e1333] [cursor=pointer]:
+                  - paragraph [ref=e1334] [cursor=pointer]: Email
+                  - paragraph [ref=e1335] [cursor=pointer]: contact@spexop.com
+              - link "LinkedIn Professional network" [ref=e1336] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e1338] [cursor=pointer]
+                - generic [ref=e1342] [cursor=pointer]:
+                  - paragraph [ref=e1343] [cursor=pointer]: LinkedIn
+                  - paragraph [ref=e1344] [cursor=pointer]: Professional network
+              - link "GitHub Open source work" [ref=e1345] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e1347] [cursor=pointer]
+                - generic [ref=e1350] [cursor=pointer]:
+                  - paragraph [ref=e1351] [cursor=pointer]: GitHub
+                  - paragraph [ref=e1352] [cursor=pointer]: Open source work
+    - generic [ref=e1354]:
+      - generic [ref=e1355]:
+        - generic [ref=e1356]:
+          - img "Spexop Logo" [ref=e1358]
+          - paragraph [ref=e1359]: Smart, scalable software built fast. We help businesses move faster with modern apps and reliable backends.
+          - generic [ref=e1360]:
+            - link "Email" [ref=e1361] [cursor=pointer]:
+              - /url: mailto:contact@spexop.com
+              - img [ref=e1362] [cursor=pointer]
+            - link "LinkedIn" [ref=e1365] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e1366] [cursor=pointer]
+            - link "GitHub" [ref=e1370] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e1371] [cursor=pointer]
+        - generic [ref=e1374]:
+          - heading "Services" [level=3] [ref=e1375]
+          - list [ref=e1376]:
+            - listitem [ref=e1377]:
+              - link "Web Apps" [ref=e1378] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e1379]:
+              - link "Mobile Apps" [ref=e1380] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e1381]:
+              - link "Backend Development" [ref=e1382] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e1383]:
+              - link "MVP & Prototypes" [ref=e1384] [cursor=pointer]:
+                - /url: "#services"
+        - generic [ref=e1385]:
+          - heading "Company" [level=3] [ref=e1386]
+          - list [ref=e1387]:
+            - listitem [ref=e1388]:
+              - link "About" [ref=e1389] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e1390]:
+              - link "Portfolio" [ref=e1391] [cursor=pointer]:
+                - /url: "#portfolio"
+            - listitem [ref=e1392]:
+              - link "Contact" [ref=e1393] [cursor=pointer]:
+                - /url: "#contact"
+      - generic [ref=e1394]:
+        - paragraph [ref=e1395]: © 2025 Spexop. All rights reserved.
+        - paragraph [ref=e1396]: Built with passion ❤️
+```
