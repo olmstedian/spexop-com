@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:https": "node server.js",
     "build": "next build",
     "start": "next start",
+    "start:https": "NODE_ENV=production node server.js",
     "lint": "next lint",
+    "generate-certs": "node scripts/generate-certs.js",
     "deploy:vercel": "vercel --prod",
     "deploy:vps": "./scripts/deploy-vps.sh",
     "test:gmail": "node scripts/test-gmail.js"

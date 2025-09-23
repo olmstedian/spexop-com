@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-              <Image 
+                            <Image 
                 src="/logo-alt.svg" 
                 alt="Spexop Logo" 
                 width={120}

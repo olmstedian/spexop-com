@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import Image from 'next/image'
 import { Menu, X, ArrowUp, Sparkles, Code2, ChevronDown, Home, Briefcase, Palette, Settings, Users, Mail } from 'lucide-react'
+import { event } from '@/lib/analytics'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -53,6 +54,9 @@ export default function Navigation() {
   }, [navItems])
 
   const scrollToSection = (sectionId: string) => {
+    // Track navigation clicks
+    event('navigation_click', 'navigation', sectionId)
+    
     const element = document.getElementById(sectionId)
     if (element) {
       const offset = 100 // Account for fixed header and scroll progress bar
@@ -70,6 +74,7 @@ export default function Navigation() {
   }
 
   const scrollToTop = () => {
+    event('scroll_to_top', 'navigation', 'scroll_top_button')
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
@@ -99,7 +104,7 @@ export default function Navigation() {
                 onClick={() => scrollToSection('hero')}
                 className="group relative hover:scale-105 transition-transform duration-300"
               >
-                <Image 
+                                <Image 
                   src="/logo-alt.svg" 
                   alt="Spexop Logo" 
                   width={144}

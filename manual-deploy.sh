@@ -1,0 +1,56 @@
+#!/bin/bash
+
+echo "🚀 Manual Spexop Deployment Script"
+echo "This script will guide you through deploying spexop step by step"
+
+# First, let's make sure we have a fresh build
+echo "📦 Building the application..."
+NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 pnpm build
+
+if [ $? -ne 0 ]; then
+    echo "❌ Build failed! Please fix errors first."
+    exit 1
+fi
+
+echo "✅ Build successful!"
+echo ""
+echo "Now run these commands on your server (SSH into root@69.62.120.67):"
+echo ""
+echo "1. Create the application directory:"
+echo "   mkdir -p /var/www/spexop-app"
+echo ""
+echo "2. Create directories for the service:"
+echo "   mkdir -p /var/www/spexop-app/.next"
+echo "   mkdir -p /var/www/spexop-app/public" 
+echo ""
+echo "3. Set proper permissions:"
+echo "   chown -R root:root /var/www/spexop-app"
+echo ""
+echo "Now run this command FROM YOUR LOCAL MACHINE to upload files:"
+echo ""
+echo "rsync -avz --delete .next/ root@69.62.120.67:/var/www/spexop-app/.next/"
+echo "rsync -avz --delete public/ root@69.62.120.67:/var/www/spexop-app/public/"
+echo "scp package.json root@69.62.120.67:/var/www/spexop-app/"
+echo "scp next.config.js root@69.62.120.67:/var/www/spexop-app/"
+echo "scp server.js root@69.62.120.67:/var/www/spexop-app/"
+echo "scp .env.production root@69.62.120.67:/var/www/spexop-app/.env"
+echo "scp spexop-api.service root@69.62.120.67:/etc/systemd/system/"
+echo ""
+echo "Then on the server:"
+echo "4. Install dependencies:"
+echo "   cd /var/www/spexop-app && npm install --production"
+echo ""
+echo "5. Enable and start the service:"
+echo "   systemctl daemon-reload"
+echo "   systemctl enable spexop-api"
+echo "   systemctl start spexop-api"
+echo "   systemctl status spexop-api"
+echo ""
+echo "6. Set up nginx (copy nginx config):"
+echo "   # Copy nginx-spexop.conf to /etc/nginx/sites-available/spexop.com"
+echo "   # Create symlink: ln -s /etc/nginx/sites-available/spexop.com /etc/nginx/sites-enabled/"
+echo "   # Test: nginx -t"
+echo "   # Reload: systemctl reload nginx"
+echo ""
+echo "🎯 Your spexop app should then be available at https://spexop.com"
+echo "📊 Google Analytics is configured with ID: G-BLEJTWDJFQ"

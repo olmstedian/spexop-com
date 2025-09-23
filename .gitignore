@@ -92,6 +92,12 @@ temp/
 *.swo
 *~
 
+# SSL certificates (for development)
+certs/
+*.pem
+*.crt
+*.key
+
 # OS generated files
 .DS_Store
 .DS_Store?

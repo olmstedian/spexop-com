@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Analytics from '@/components/Analytics'
 
 export const metadata: Metadata = {
   title: 'Spexop - Smart, Scalable Software Built Fast',
   description: 'We design and develop modern apps, web platforms, and backends that help businesses move faster.',
   keywords: 'software development, web apps, mobile apps, backend development, Estonia, React, Next.js, NestJS',
   authors: [{ name: 'Spexop' }],
+  metadataBase: new URL('https://spexop.com'),
   icons: {
     icon: [
       { url: '/icon.svg', sizes: 'any', type: 'image/svg+xml' },
@@ -37,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <Analytics />
         {children}
       </body>
     </html>

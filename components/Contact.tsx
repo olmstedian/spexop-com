@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { Mail, Github, Linkedin, Send, MessageCircle, Phone, MapPin, Clock, CheckCircle2, User, AtSign } from 'lucide-react'
+import { event } from '@/lib/analytics'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -21,6 +22,9 @@ export default function Contact() {
     setIsLoading(true)
     setError(null)
 
+    // Track form submission attempt
+    event('form_submit_attempt', 'contact', 'contact_form')
+
     try {
 
       const response = await fetch('/api/contact', {
@@ -34,8 +38,14 @@ export default function Contact() {
       const result = await response.json()
 
       if (!response.ok) {
+        // Track form submission error
+        event('form_submit_error', 'contact', result.error || 'Unknown error')
         throw new Error(result.error || 'Failed to send message')
       }
+
+      // Track successful form submission
+      event('form_submit_success', 'contact', 'contact_form', 1)
+      event('generate_lead', 'engagement', formData.projectType)
 
       setIsSubmitted(true)
       // Reset form after delay

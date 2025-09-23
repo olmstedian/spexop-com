@@ -4,5 +4,13 @@
     "no-unused-vars": "warn",
     "no-console": "warn",
     "react/no-unescaped-entities": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["scripts/**/*.js", "server.js"],
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
 }
