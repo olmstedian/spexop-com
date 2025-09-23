@@ -109,7 +109,6 @@ export default function Navigation() {
                   alt="Spexop Logo" 
                   width={144}
                   height={48}
-                  priority
                   className={`h-12 w-auto transition-all duration-300 ${
                     scrolled ? '' : 'brightness-0 invert'
                   }`}
